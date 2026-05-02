@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2hvdsk');
+  src:  url('fonts/icomoon.eot?2hvdsk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2hvdsk') format('truetype'),
+    url('fonts/icomoon.woff?2hvdsk') format('woff'),
+    url('fonts/icomoon.svg?2hvdsk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-license:before {
+  content: "\e90e";
+}
+.icon-seo:before {
+  content: "\e910";
+}
+.icon-email:before {
+  content: "\e90a";
+}
+.icon-pin:before {
+  content: "\e90c";
+}
+.icon-color:before {
+  content: "\e90d";
+}
+.icon-next:before {
+  content: "\e909";
+}
+.icon-send:before {
+  content: "\e904";
+}
+.icon-badge:before {
+  content: "\e905";
+}
+.icon-js:before {
+  content: "\e908";
+}
+.icon-typescript:before {
+  content: "\e906";
+}
+.icon-java:before {
+  content: "\e907";
+}
+.icon-react:before {
+  content: "\e901";
+}
+.icon-tailwind:before {
+  content: "\e902";
+}
+.icon-badge-small:before {
+  content: "\e903";
+}
+.icon-home:before {
+  content: "\e900";
+}
+.icon-droplet:before {
+  content: "\e90b";
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-play:before {
+  content: "\e912";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e948";
+}
+.icon-clock:before {
+  content: "\e94f";
+}
+.icon-bell:before {
+  content: "\e951";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-download:before {
+  content: "\e960";
+}
+.icon-database:before {
+  content: "\e964";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-quotes-left:before {
+  content: "\e977";
+}
+.icon-quotes-right:before {
+  content: "\e978";
+}
+.icon-spinner:before {
+  content: "\e97a";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-leaf:before {
+  content: "\e9a4";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-meter:before {
+  content: "\e9a7";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+.icon-tree:before {
+  content: "\e9bc";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-star-half:before {
+  content: "\e9d8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-pause:before {
+  content: "\ea1d";
+}
+.icon-arrow-up:before {
+  content: "\ea3a";
+}
+.icon-arrow-up-right:before {
+  content: "\ea3b";
+}
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+.icon-arrow-left:before {
+  content: "\ea40";
+}
+.icon-code-open:before {
+  content: "\ea7f";
+}
+.icon-code:before {
+  content: "\ea80";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-wordpress:before {
+  content: "\eab4";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+.icon-flattr:before {
+  content: "\ead5";
+}
+.icon-yelp:before {
+  content: "\ead7";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
+}
+.icon-file:before {
+  content: "\eae0";
+}
+.icon-libreoffice:before {
+  content: "\eae3";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}
+.icon-html:before {
+  content: "\eae5";
+}
+.icon-css:before {
+  content: "\eae6";
+}
+.icon-git:before {
+  content: "\eae7";
+}
+.icon-virus:before {
+  content: "\eae9";
+}

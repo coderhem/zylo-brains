@@ -1,0 +1,31 @@
+.swiper-pagination-bullets {
+  @apply pt-5 !static;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet{
+  @apply
+  bg-[var(--orange)]  
+  transition-all
+  duration-500
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+  @apply
+  bg-[var(--orange)]  
+  w-8
+  rounded-xl
+}
+
+.swiper-button-prev, 
+.swiper-button-next{
+  @apply
+  !static
+  flex
+  items-center
+}
+
+.hero-slider{
+  @apply
+ max-lg:max-h-max
+}

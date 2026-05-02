@@ -1,0 +1,104 @@
+@layer components {
+  .btn {
+    @apply inline-flex 
+		items-center 
+		justify-center 
+		cursor-pointer 
+		px-4
+    lg:px-6 
+		py-3 
+		text-base 
+		lg:text-lg 
+		text-center 
+		leading-none 
+		font-normal 
+		no-underline 
+		select-none 
+		border 
+    rounded-full
+		border-solid 
+		transition 
+		ease-in-out 
+		duration-500 
+		focus:outline-none 
+		focus:ring-2 
+		focus:ring-offset-1 
+		disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply bg-primary 
+    text-white 
+    border-primary 
+    hover:bg-transparent 
+    hover:text-primary 
+    hover:border-primary
+    focus:bg-transparent
+    focus:text-primary 
+    focus:border-primary
+    focus:ring-primary/75
+    active:bg-transparent
+    active:border-primary;
+  }
+  .btn-white {
+    @apply font-lato
+    bg-white 
+    text-primary 
+    border-white 
+    hover:bg-primary 
+    hover:text-white 
+    hover:border-primary
+    focus:bg-primary
+    focus:text-white 
+    focus:border-primary
+    focus:ring-primary/75
+    active:bg-primary
+    active:text-white 
+    active:border-primary;
+  }
+  .btn-outline {
+    @apply font-raleway
+    bg-transparent 
+    text-primary 
+    border-primary 
+    hover:bg-primary 
+    hover:text-white 
+    hover:border-primary
+    focus:bg-primary
+    focus:text-white 
+    focus:border-primary
+    focus:ring-primary/75
+    active:bg-primary
+    active:text-white 
+    active:border-primary;
+  }
+
+  .icon {
+    @apply pl-10!
+  max-sm:rounded-full
+  max-sm:size-11
+  max-sm:flex
+  max-sm:justify-center
+  max-sm:items-center
+  max-sm:p-0!
+  font-raleway
+  relative
+  before:absolute
+  before:left-3
+  max-sm:before:left-1/2
+  max-sm:before:-translate-x-1/2
+  before:top-1/2
+  before:-translate-y-1/2
+  before:content-['\e942']
+  before:font-icomoon;
+  }
+
+  .btn-block {
+    @apply block w-full;
+  }
+
+  .stretched-link {
+    @apply before:absolute
+    before:inset-0;
+  }
+}
