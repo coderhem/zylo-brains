@@ -3,6 +3,7 @@
   fixed
   left-0
   right-0
+  z-20
   top-0;
 }
 
@@ -110,5 +111,36 @@ text-white
 
 body.active{
  @apply
- overflow-hidden
+ overflow-hidden;
+}
+
+.hero .swiper-button-prev,
+.hero .swiper-button-next{
+  @apply
+  transition-all
+  duration-300
+  absolute! 
+  top-1/2 
+  -translate-y-1/2 
+  bg-primary
+  hover:bg-white
+  focus:bg-white
+  active:bg-white
+  hover:before:text-primary
+  border
+  border-primary
+  rounded-full
+  [&_svg]:hidden
+  before:text-white
+  before:absolute
+  before:transition-all
+  before:duration-300
+  before:font-icomoon
+  before:content-['\ea3c'];
+}
+
+.hero .swiper-button-prev{
+  @apply
+  before:font-icomoon
+  before:content-['\ea40'];
 }

@@ -7,7 +7,7 @@ type HeaderProps = {
   passHeaderHeight: (height: number) => void;
 };
 
-const Header = ({ passHeaderHeight }: HeaderProps) => {
+const Header = ({ passHeaderHeight }: any) => {
   const [hamburger, setHamburger] = useState(false);
 
   // Toggle body class

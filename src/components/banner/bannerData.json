@@ -1,0 +1,34 @@
+{
+ "bannerData": [
+  {
+   "imgSrc": "/images/banner-image.jpg",
+   "imgWidth": 1440,
+   "imgHeight": 720,
+   "imgAlt": "Banner Logo"
+  },
+  {
+   "imgSrc": "/images/banner-image.jpg",
+   "imgWidth": 1440,
+   "imgHeight": 720,
+   "imgAlt": "Banner Logo"
+  },
+  {
+   "imgSrc": "/images/banner-image.jpg",
+   "imgWidth": 1440,
+   "imgHeight": 720,
+   "imgAlt": "Banner Logo"
+  },
+  {
+   "imgSrc": "/images/banner-image.jpg",
+   "imgWidth": 1440,
+   "imgHeight": 720,
+   "imgAlt": "Banner Logo"
+  },
+  {
+   "imgSrc": "/images/banner-image.jpg",
+   "imgWidth": 1440,
+   "imgHeight": 720,
+   "imgAlt": "Banner Logo"
+  }
+ ]
+}
