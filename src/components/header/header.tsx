@@ -44,18 +44,19 @@ const Header = ({ passHeaderHeight }: any) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   return (
     <header className='site-header bg-white shadow-2xl py-4' ref={headerRef}>
       <div className="container">
         <div className="flex items-center justify-between">
-          <Image
-            src="/images/header-logo.png"
-            width={190}
-            height={90}
-            alt='Header Logo'
-            className='max-sm:max-w-32'
-          />
+          <a href="/">
+            <Image
+              src="/images/header-logo.png"
+              width={190}
+              height={90}
+              alt='Header Logo'
+              className='max-sm:max-w-32'
+            /></a>
           <nav className='navbar flex -mx-4'>
             <ul className='hidden px-4 lg:flex items-center -mx-4 [&_li]:px-4'>
               {navbarLinks.links.map((item, index) => (

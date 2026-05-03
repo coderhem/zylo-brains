@@ -1,52 +1,71 @@
 'use client';
 import Image from 'next/image'
 import React from 'react'
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import bannerContent from "./bannerData.json";
-const Banner = () => {
- return (
-  <>
-   <section className='hero'>
-    <div className="relative">
-     <Swiper
-      cssMode={true}
-      navigation={true}
-      pagination={true}
-      // mousewheel={true}
-      keyboard={true}
-      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className="mySwiper"
-     >
-      {bannerContent.bannerData.map((item, index) => (
-       <SwiperSlide key={index}>
-        <Image
-         src={item.imgSrc}
-         width={item.imgWidth}
-         height={item.imgHeight}
-         alt={item.imgAlt}
-         className={`max-sm:max-w-32`}
-        />
-        <div className="max-w-2xl mx-auto before:absolute before:inset-0 before:bg-black/90 text-white">
-         <div className="absolute top-1/2 left-1/2 -translate-1/2 text-center">
-         <h1 className='mb-3'>Build Smart Digital <span className='text-primary'>Solutions For The Future</span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ipsum natus ea, esse autem velit error ipsam iusto, cupiditate veniam numquam blanditiis voluptatem minus illum. Error consectetur placeat laboriosam.</p>
-          <div className="flex gap-5 justify-center pt-8">
-           <a href="#" className='btn btn-primary'>Join Us</a>
-           <a href="#" className='btn btn-outline'>Get in Touch</a>
-          </div>
-         </div>
-        </div>
-       </SwiperSlide>
-      ))}
 
-     </Swiper>
-    </div>
-   </section>
-  </>
+type BannerItem = {
+ imgSrc: string;
+ imgWidth: number;
+ imgHeight: number;
+ imgAlt: string;
+ heading: string;
+ highlightHeading: string;
+ description: string;
+ ctaOneText: string;
+ ctaTwoText: string;
+ ctaOneLink: string;
+ ctaTwoLink: string;
+};
+
+
+const Banner: React.FC = () => {
+ const bannerData = bannerContent.bannerData as BannerItem[];
+ return (
+  <section className='hero'>
+   <div className="relative">
+    <Swiper
+     allowTouchMove={true}
+     simulateTouch={true}
+     grabCursor={true}
+     navigation={true}
+     pagination={{ clickable: true }}
+     keyboard={true}
+     loop={true}
+     autoplay={{
+      delay: 7000, // 5 seconds
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+     }}
+     modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
+     className="heroSwiper"
+    >
+     {bannerData.map((item: BannerItem, index: number) => (
+      <SwiperSlide key={index} className='relative before:absolute before:inset-0 before:bg-black/80 before:z-1'>
+       <Image
+        src={item.imgSrc}
+        width={item.imgWidth}
+        height={item.imgHeight}
+        alt={item.imgAlt}
+        className={`max-sm:max-w-32 absolute inset-0 -z-1 h-full object-center object-cover`}
+       />
+       <div className="py-20 xl:py-24 relative z-2 max-w-2xl mx-auto text-center text-white px-5 md:px-8">
+        <h1 className='mb-3'>{item.heading}<span className='text-primary'> {item.highlightHeading} </span></h1>
+        <div dangerouslySetInnerHTML={{ __html: item.description }} />
+        <div className="flex gap-5 justify-center pt-8">
+         <a href={`${item.ctaOneLink}`} className='btn btn-primary'>{item.ctaOneText}</a>
+         <a href={`${item.ctaTwoLink}`} className='btn btn-outline'>{item.ctaTwoText}</a>
+        </div>
+       </div>
+      </SwiperSlide>
+     ))}
+    </Swiper>
+   </div>
+  </section>
  )
 }
 

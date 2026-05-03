@@ -4,31 +4,66 @@
    "imgSrc": "/images/banner-image.jpg",
    "imgWidth": 1440,
    "imgHeight": 720,
-   "imgAlt": "Banner Logo"
+   "imgAlt": "Banner Logo",
+   "heading": "Test",
+   "highlightHeading": "Test1",
+   "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ipsum natus ea, esse autem velit error ipsam iusto, cupiditate veniam numquam blanditiis voluptatem minus illum. Error consectetur placeat laboriosam.</p>",
+   "ctaOneText": "Join Us",
+   "ctaOneLink": "/contact",
+   "ctaTwoText": "Get in Touch",
+   "ctaTwoLink": "/join-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
    "imgWidth": 1440,
    "imgHeight": 720,
-   "imgAlt": "Banner Logo"
+   "imgAlt": "Banner Logo",
+   "heading": "Test",
+   "highlightHeading": "Test1",
+   "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ipsum natus ea, esse autem velit error ipsam iusto, cupiditate veniam numquam blanditiis voluptatem minus illum. Error consectetur placeat laboriosam.</p>",
+   "ctaOneText": "Join Us",
+   "ctaOneLink": "/contact",
+   "ctaTwoText": "Get in Touch",
+   "ctaTwoLink": "/join-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
    "imgWidth": 1440,
    "imgHeight": 720,
-   "imgAlt": "Banner Logo"
+   "imgAlt": "Banner Logo",
+   "heading": "Test",
+   "highlightHeading": "Test1",
+   "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ipsum natus ea, esse autem velit error ipsam iusto, cupiditate veniam numquam blanditiis voluptatem minus illum. Error consectetur placeat laboriosam.</p>",
+   "ctaOneText": "Join Us",
+   "ctaOneLink": "/contact",
+   "ctaTwoText": "Get in Touch",
+   "ctaTwoLink": "/join-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
    "imgWidth": 1440,
    "imgHeight": 720,
-   "imgAlt": "Banner Logo"
+   "imgAlt": "Banner Logo",
+   "heading": "Test",
+   "highlightHeading": "Test1",
+   "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ipsum natus ea, esse autem velit error ipsam iusto, cupiditate veniam numquam blanditiis voluptatem minus illum. Error consectetur placeat laboriosam.</p>",
+   "ctaOneText": "Join Us",
+   "ctaOneLink": "/contact",
+   "ctaTwoText": "Get in Touch",
+   "ctaTwoLink": "/join-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
    "imgWidth": 1440,
    "imgHeight": 720,
-   "imgAlt": "Banner Logo"
+   "imgAlt": "Banner Logo",
+   "heading": "Test",
+   "highlightHeading": "Test1",
+   "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ipsum natus ea, esse autem velit error ipsam iusto, cupiditate veniam numquam blanditiis voluptatem minus illum. Error consectetur placeat laboriosam.</p>",
+   "ctaOneText": "Join Us",
+   "ctaOneLink": "/contact",
+   "ctaTwoText": "Get in Touch",
+   "ctaTwoLink": "/join-us"
   }
  ]
 }

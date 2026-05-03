@@ -1,31 +1,49 @@
 .swiper-pagination-bullets {
-  @apply pt-5 !static;
+  @apply md:hidden py-2 sm:pt-5 static z-10;
 }
-
 
 .swiper-pagination .swiper-pagination-bullet{
   @apply
-  bg-[var(--orange)]  
+  bg-primary  
   transition-all
   duration-500
 }
 
 .swiper-pagination .swiper-pagination-bullet-active{
   @apply
-  bg-[var(--orange)]  
+  bg-primary  
   w-8
-  rounded-xl
+  rounded-xl;
 }
 
-.swiper-button-prev, 
-.swiper-button-next{
+.hero .swiper-button-prev,
+.hero .swiper-button-next{
   @apply
-  !static
-  flex
-  items-center
+  max-md:hidden
+  transition-all
+  duration-300
+  absolute 
+  top-1/2 
+  -translate-y-1/2 
+  bg-primary
+  hover:bg-white
+  focus:bg-white
+  active:bg-white
+  hover:before:text-primary
+  border
+  border-primary
+  rounded-full
+  [&_svg]:hidden
+  before:text-white
+  before:absolute
+  before:transition-all
+  before:duration-300
+  before:font-icomoon
+  before:content-['\ea3c'];
 }
 
-.hero-slider{
+.hero .swiper-button-prev{
   @apply
- max-lg:max-h-max
+  before:font-icomoon
+  before:content-['\ea40'];
 }

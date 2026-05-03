@@ -73,6 +73,22 @@
     active:border-primary;
   }
 
+    .btn-blue {
+    @apply 
+    bg-secondary/10 
+    text-secondary 
+    border-secondary/10 
+    hover:bg-secondary 
+    hover:text-white 
+    hover:border-secondary
+    focus:bg-secondary
+    focus:text-white 
+    focus:border-secondary
+    focus:ring-secondary/75
+    active:bg-secondary
+    active:border-secondary;
+  }
+
   .icon {
     @apply pl-10!
   max-sm:rounded-full
@@ -90,6 +106,29 @@
   before:top-1/2
   before:-translate-y-1/2
   before:content-['\e942']
+  before:font-icomoon;
+  }
+
+  .learn-more {
+    @apply pr-6!
+  max-sm:rounded-full
+  max-sm:size-11
+  max-sm:flex
+  max-sm:justify-center
+  max-sm:items-center
+  max-sm:p-0!
+  font-raleway
+  relative
+  before:transition-all
+  before:duration-300
+  hover:before:translate-x-1
+  before:absolute
+  before:right-0
+  max-sm:before:left-1/2
+  max-sm:before:-translate-x-1/2
+  before:top-1/2
+  before:-translate-y-1/2
+  before:content-['\ea3c']
   before:font-icomoon;
   }
 

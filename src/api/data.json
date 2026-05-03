@@ -1,0 +1,100 @@
+{
+  "serviceData": [
+    {
+      "cardTitle": "Web Development",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconClass": "icon-code text-primary",
+      "bgColor": "bg-primary/20",
+      "ctaText": "Join Now",
+      "ctaLink": "/join",
+      "cardTheme": "blue",
+      "borderColor": "border-primary"
+    },
+    {
+      "cardTitle": "Mobile Apps",
+      "cardDescription": "Native and cross-platform mobile solutions for iOS and Android.",
+      "iconClass": "icon-mobile text-secondary",
+      "bgColor": "bg-secondary/20",
+      "ctaText": "Join Now",
+      "ctaLink": "/join",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70"
+    },
+    {
+      "cardTitle": "Digital Marketing",
+      "cardDescription": "Drive growth with data-driven marketing strategies.",
+      "iconClass": " icon-power text-primary",
+      "bgColor": "bg-primary/20",
+      "ctaText": "Join Now",
+      "ctaLink": "/join",
+      "cardTheme": "blue",
+      "borderColor": "border-primary"
+    },
+    {
+      "cardTitle": "ERP Development",
+      "cardDescription": "Native and cross-platform mobile solutions for iOS and Android.",
+      "iconClass": "icon-rocket text-secondary",
+      "bgColor": "bg-secondary/20",
+      "ctaText": "Join Now",
+      "ctaLink": "/join",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70"
+    }
+  ],
+  "achivementData": [
+    {
+      "bgColor": "bg-primary",
+      "iconBgColor": "bg-white/30",
+      "iconClass": "icon-user text-2xl",
+      "headingContent": "500+",
+      "content": "Happy Clients"
+    },
+    {
+      "headingContent": "1200+",
+      "content": "Projects Completed",
+      "bgColor": "bg-secondary",
+      "iconBgColor": "bg-white/30",
+      "iconClass": "icon-code text-2xl"
+    },
+    {
+      "headingContent": "97%",
+      "content": "Client Satisfaction",
+      "bgColor": "bg-cyan",
+      "iconBgColor": "bg-white/30",
+      "iconClass": "icon-badge text-2xl"
+    },
+    {
+      "headingContent": "5+",
+      "content": "Years of Experience",
+      "bgColor": "bg-blue",
+      "iconBgColor": "bg-white/30",
+      "iconClass": "icon-arrow-up text-2xl"
+    }
+  ],
+  "trainingData": [
+    {
+      "cardTitle": "Full Stack Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "/courses",
+      "languageList": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "Java"
+        }
+      ]
+    }
+  ]
+}
