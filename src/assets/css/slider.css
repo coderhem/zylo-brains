@@ -1,5 +1,5 @@
-.swiper-pagination-bullets {
-  @apply md:hidden py-2 sm:pt-5 static z-10;
+.testimonial .swiper-pagination-bullets {
+  @apply sm:pt-5 static z-10;
 }
 
 .swiper-pagination .swiper-pagination-bullet{

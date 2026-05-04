@@ -5,6 +5,10 @@ import Data from "@/api/data.json";
 import ServiceCard from "@/components/cards/serviceCard";
 import AchivementCard from "@/components/cards/achivementCard";
 import TrainingCard from "@/components/cards/trainingCard";
+import TestimonialCard from "@/components/cards/testimonialCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Keyboard, Mousewheel, Pagination } from "swiper/modules";
+
 
 export default function Home() {
   return (
@@ -98,6 +102,41 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* End Achivements Section */}
+
+      <section className="bg-white py-14 md:py-16 lg:py-20">
+        <div className="container">
+          <BlockTitle
+            title="What Our"
+            orangeText="Clients Say"
+            description="Real feedback from real people who trusted us with their vision"
+            customClass="text-center max-w-3xl mx-auto mb-10 text-dark"
+          />
+          <Swiper
+            allowTouchMove={true}
+            simulateTouch={true}
+            slidesPerView={3}
+            spaceBetween={25}
+            grabCursor={true}
+            pagination={{ clickable: true }}
+            keyboard={true}
+            modules={[Autoplay, Pagination, Mousewheel, Keyboard]}
+            className="testimonial"
+          >
+            {Data.testimonialData.map((item, index) => (
+              <SwiperSlide key={index} className="h-auto">
+                <TestimonialCard
+                  clientName={item.clientName}
+                  rating={item.rating}
+                  description={item.description}
+                  nameText={item.nameText}
+                  post={item.post}
+                />
+              </SwiperSlide >
+            ))}
+          </Swiper>
+        </div>
+      </section >
     </>
   );
 }

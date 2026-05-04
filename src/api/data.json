@@ -95,6 +95,81 @@
           "name": "Java"
         }
       ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "/courses",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Full Stack Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "/courses",
+      "languageList": [
+        {
+          "name": "Test"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "Java"
+        }
+      ]
+    }
+  ],
+  "testimonialData": [
+    {
+      "rating": 4.5,
+      "hasHalfStar": 1,
+      "nameText": "HJ",
+      "clientName": "Hem Raj Joshi",
+      "post": "Client",
+      "description": "<p>The team delivered beyond expectations. Our mobile app now has over 100k downloads, thanks to their excellent development.</p>"
+    },
+    {
+      "rating": 5,
+      "hasHalfStar": 1,
+      "nameText": "HJ",
+      "clientName": "Hem Raj Joshi",
+      "post": "Client",
+      "description": "<p>The team delivered beyond expectations. Our mobile app now has over 100k downloads, thanks to their excellent development.</p>"
+    },
+    {
+      "rating": 5,
+      "hasHalfStar": 1,
+      "nameText": "HJ",
+      "clientName": "Hem Raj Joshi",
+      "post": "Client",
+      "description": "<p>The team delivered beyond expectations. Our mobile app now has over 100k downloads, thanks to their excellent development.</p>"
+    },
+    {
+      "rating": 5,
+      "hasHalfStar": 1,
+      "nameText": "HJ",
+      "clientName": "Hem Raj Joshi",
+      "post": "Client",
+      "description": "<p>The team delivered beyond expectations. Our mobile app now has over 100k downloads, thanks to their excellent development.</p>"
     }
   ]
 }
