@@ -1,11 +1,7 @@
 import Image from 'next/image'
 import Data from '@/api/data.json'
-type Props = {
- iconClass: string,
- iconLink: string
- date: string
-}
-const Footer = ({ iconClass }: Props) => {
+
+const Footer = () => {
  return (
   <footer className='pt-14 bg-linear-to-r from-dark-blue to-light-blue text-white' data-aos="fade-up">
    <div className="container">
