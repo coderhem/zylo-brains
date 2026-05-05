@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Data from "@/api/data.json"
+import FancyboxWrapper from "@/hooks/fancyBox"
+import PopupForm from "../forms/popupForm"
 type Props = {
   customClass?: string,
   cardTitle?: string,
@@ -45,10 +47,15 @@ const TrainingCard = ({ customClass, cardTitle, timeIcon, time, userIcon, studen
           ))}
         </ul>
       </div>
-      <a href={cardLink} className="stretched-link"></a>
+      <a href={cardLink} className="stretched-link" data-fancybox></a>
       <div className="absolute -right-3 -top-3 bg-primary text-white rounded-full py-1 px-3">
         <span className="font-semibold text-sm">Internship Available</span>
       </div>
+      <FancyboxWrapper>
+        <div className="hidden max-w-full mx-auto" id='contact'>
+          <PopupForm />
+        </div>
+      </FancyboxWrapper>
     </div>
   )
 }

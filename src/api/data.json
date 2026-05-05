@@ -5,8 +5,8 @@
       "cardDescription": "Custom web applications built with modern frameworks and best practices.",
       "iconClass": "icon-code text-primary",
       "bgColor": "bg-primary/20",
-      "ctaText": "Join Now",
-      "ctaLink": "/join",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
       "cardTheme": "blue",
       "borderColor": "border-primary"
     },
@@ -15,8 +15,8 @@
       "cardDescription": "Native and cross-platform mobile solutions for iOS and Android.",
       "iconClass": "icon-mobile text-secondary",
       "bgColor": "bg-secondary/20",
-      "ctaText": "Join Now",
-      "ctaLink": "/join",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
       "cardTheme": "blue",
       "borderColor": "border-secondary",
       "learnIconClass": "text-secondary hover:text-secondary/70"
@@ -26,8 +26,8 @@
       "cardDescription": "Drive growth with data-driven marketing strategies.",
       "iconClass": " icon-power text-primary",
       "bgColor": "bg-primary/20",
-      "ctaText": "Join Now",
-      "ctaLink": "/join",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
       "cardTheme": "blue",
       "borderColor": "border-primary"
     },
@@ -36,8 +36,8 @@
       "cardDescription": "Native and cross-platform mobile solutions for iOS and Android.",
       "iconClass": "icon-rocket text-secondary",
       "bgColor": "bg-secondary/20",
-      "ctaText": "Join Now",
-      "ctaLink": "/join",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
       "cardTheme": "blue",
       "borderColor": "border-secondary",
       "learnIconClass": "text-secondary hover:text-secondary/70"
@@ -80,7 +80,7 @@
       "timeIcon": "icon-clock",
       "userIcon": "icon-user",
       "students": "30+ students",
-      "cardLink": "/courses",
+      "cardLink": "#inquery",
       "languageList": [
         {
           "name": "React"
@@ -102,7 +102,7 @@
       "timeIcon": "icon-clock",
       "userIcon": "icon-user",
       "students": "30+ students",
-      "cardLink": "/courses",
+      "cardLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -121,7 +121,7 @@
       "timeIcon": "icon-clock",
       "userIcon": "icon-user",
       "students": "30+ students",
-      "cardLink": "/courses",
+      "cardLink": "#inquery",
       "languageList": [
         {
           "name": "Test"
@@ -170,6 +170,90 @@
       "clientName": "Hem Raj Joshi",
       "post": "Client",
       "description": "<p>The team delivered beyond expectations. Our mobile app now has over 100k downloads, thanks to their excellent development.</p>"
+    }
+  ],
+  "footerLinks": [
+    {
+      "socialLinks": [
+        {
+          "iconClass": "icon-facebook",
+          "iconLink": "/"
+        },
+        {
+          "iconClass": "icon-instagram",
+          "iconLink": "/"
+        },
+        {
+          "iconClass": "icon-whatsapp",
+          "iconLink": "/"
+        }
+      ],
+      "quickLinks": [
+        {
+          "linkText": "Home",
+          "link": "/"
+        },
+        {
+          "linkText": "About",
+          "link": "/"
+        },
+        {
+          "linkText": "Training",
+          "link": "/"
+        },
+        {
+          "linkText": "Carrer",
+          "link": "/"
+        },
+        {
+          "linkText": "Blog",
+          "link": "/"
+        }
+      ],
+      "servicesLinks": [
+        {
+          "linkText": "Web Development",
+          "link": "/"
+        },
+        {
+          "linkText": "Mobile Apps",
+          "link": "/"
+        },
+        {
+          "linkText": "Data Analytics",
+          "link": "/"
+        },
+        {
+          "linkText": "Cybersecurity",
+          "link": "/"
+        },
+        {
+          "linkText": "Cloud Solutions",
+          "link": "/"
+        }
+      ],
+      "contactLinks": [
+        {
+          "linkText": "+977 9851345885",
+          "iconClass": "icon-phone",
+          "link": "tel:9851345885"
+        },
+        {
+          "linkText": "+977 015921848",
+          "iconClass": "icon-landline",
+          "link": "tel:015921848"
+        },
+        {
+          "linkText": "business@zylobrains.com",
+          "iconClass": "icon-email",
+          "link": "mailto:business@zylobrains.com"
+        },
+        {
+          "linkText": "Balkumari Bridge, Lalitpur, Nepal",
+          "iconClass": "icon-pin",
+          "link": "https://maps.app.goo.gl/Qmg2f4W1zB71aFRa8"
+        }
+      ]
     }
   ]
 }

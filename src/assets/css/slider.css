@@ -2,6 +2,10 @@
   @apply sm:pt-5 static z-10;
 }
 
+.hero .swiper-pagination-bullets {
+  @apply
+  md:hidden!;
+}
 .swiper-pagination .swiper-pagination-bullet{
   @apply
   bg-primary  

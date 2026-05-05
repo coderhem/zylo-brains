@@ -104,7 +104,7 @@ export default function Home() {
       </section>
       {/* End Achivements Section */}
 
-      <section className="bg-white py-14 md:py-16 lg:py-20">
+      <section className="bg-white py-14 md:py-16 lg:py-20" data-aos="fade-up">
         <div className="container">
           <BlockTitle
             title="What Our"
@@ -122,6 +122,21 @@ export default function Home() {
             keyboard={true}
             modules={[Autoplay, Pagination, Mousewheel, Keyboard]}
             className="testimonial"
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+              },
+            }}
+            data-aos="fade-right"
           >
             {Data.testimonialData.map((item, index) => (
               <SwiperSlide key={index} className="h-auto">

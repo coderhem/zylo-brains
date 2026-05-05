@@ -1,4 +1,6 @@
 import React from 'react'
+import PopupForm from '../forms/popupForm';
+import FancyboxWrapper from '@/hooks/fancyBox';
 
 type Props = {
  cardTitle?: string,
@@ -28,9 +30,14 @@ const ServiceCard = ({ cardTitle, cardDescription, ctaText, ctaLink, learnIconCl
    }
    {ctaText &&
     <div className="mt-7">
-     <a href={ctaLink} className={`learn-more ${learnIconClass}`}>{ctaText}</a>
+     <a href={ctaLink} className={`learn-more ${learnIconClass}`} data-fancybox>{ctaText}</a>
     </div>
    }
+   <FancyboxWrapper>
+    <div className="hidden max-w-full mx-auto" id='inquery'>
+     <PopupForm />
+    </div>
+   </FancyboxWrapper>
   </div>
  )
 }

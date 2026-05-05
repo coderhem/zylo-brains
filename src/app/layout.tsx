@@ -3,6 +3,7 @@ import { Lato, Raleway } from "next/font/google";
 import "./globals.css";
 import LayoutClient from "@/components/LayoutClient";
 import { AOSProvider } from "@/components/animation/AOSProvider";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 const raleway = Raleway({
   variable: "--font-raleway",

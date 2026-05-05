@@ -4,7 +4,8 @@
 @import "../assets/css/slider.css";
 @import "../assets/css/typography.css";
 @import "../assets/css/button.css";
-@import "../assets/lib/style.css";
+@import "../assets/css/form.css";
+@import "../assets/lib/icomoon/style.css";
 
 :root {
   --background: #ffffff;
@@ -22,6 +23,8 @@
   --color-gold: #c8a888;
   --color-star-gold: #EFBF04;
   --color-blue: #3b82f6;
+  --color-dark-blue: #121d36;
+  --color-light-blue: #1a347e;
   --color-beige: #f3e8dc;
   --color-maroon: #FF5656;
   --color-yellow: #FEEE91;

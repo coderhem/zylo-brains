@@ -1,0 +1,38 @@
+.form-control {
+  @apply block 
+  w-full 
+  h-12 
+  lg:h-14 
+  p-4
+  font-sans 
+  font-normal 
+  leading-tight 
+  text-base
+  text-black
+  bg-transparent
+  border
+  border-secondary/20
+  bg-clip-padding 
+  rounded-sm
+  placeholder:text-black/50
+  transition 
+  ease-in-out 
+  duration-500 
+  focus:text-black 
+  focus:border-primary 
+  focus:outline-none 
+  focus:shadow-lg;
+}
+
+
+select.form-control {
+  @apply focus:text-white focus:bg-white;
+}
+
+textarea.form-control {
+  @apply h-8 resize-none overflow-hidden;
+}
+
+.form-group {
+  @apply mb-4 w-full px-2;
+}
