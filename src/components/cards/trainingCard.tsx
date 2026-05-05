@@ -13,7 +13,7 @@ type Props = {
   list?: [],
 }
 
-const TrainingCard = ({ customClass, cardTitle, timeIcon, time, userIcon, students, cardLink, list }: Props) => {
+const TrainingCard = ({ customClass, cardTitle, timeIcon, time, userIcon, students, cardLink }: Props) => {
   return (
     <div className={`${customClass} relative border border-secondary/30 rounded-xl transition-all duration-300 bg-white shadow hover:shadow-xl`}>
       <div className="mb-5">

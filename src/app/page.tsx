@@ -25,8 +25,8 @@ export default function Home() {
           />
           <div className="flex flex-wrap gap-y-6 -mx-3">
             {Data.serviceData.map((item, index) => (
-              <div className="w-full md:w-1/2 lg:w-1/3 px-3">
-                <ServiceCard key={index}
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3" key={index}>
+                <ServiceCard
                   cardTitle={item.cardTitle}
                   cardDescription={item.cardDescription}
                   ctaText={item.ctaText}
@@ -53,8 +53,8 @@ export default function Home() {
           />
           <div className="flex gap-y-7 flex-wrap -mx-3">
             {Data.achivementData.map((item, index) => (
-              <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3" data-aos="fade-right">
-                <AchivementCard key={index}
+              <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3" data-aos="fade-right" key={index}>
+                <AchivementCard 
                   bgColor={item.bgColor}
                   iconBgColor={item.iconBgColor}
                   headingContent={item.headingContent}
@@ -88,8 +88,8 @@ export default function Home() {
           </div>
           <div className="flex gap-y-7 flex-wrap -mx-3">
             {Data.trainingData.map((item, index) => (
-              <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3" data-aos="fade-right">
-                <TrainingCard key={index}
+              <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3" data-aos="fade-right" key={index}>
+                <TrainingCard 
                   cardTitle={item.cardTitle}
                   time={item.time}
                   timeIcon={item.timeIcon}
