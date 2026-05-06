@@ -1,0 +1,47 @@
+.accordion {
+  @apply min-w-max
+ [&.active]:bg-primary
+ [&.active]:text-white
+ text-primary
+ border
+ border-primary
+ hover:bg-primary
+ hover:text-white
+ transition-all
+ duration-300
+ w-full
+ cursor-pointer
+ rounded
+ font-semibold
+ py-3
+ px-2;
+}
+
+.accordion-btn {
+  @apply min-w-max;
+}
+
+.pagination-btn {
+  @apply 
+  px-4 
+  py-2 
+  transition-all 
+  duration-300 border 
+  border-primary 
+  hover:bg-transparent 
+  hover:text-primary 
+  disabled:bg-primary/10 
+  disabled:border-transparent 
+  disabled:hover:bg-primary/10 
+  disabled:hover:text-primary/80 
+  bg-primary 
+  text-white rounded 
+  disabled:text-primary/80 
+  cursor-pointer 
+  disabled:cursor-not-allowed;
+}
+
+.pagination-number{
+ @apply
+ cursor-pointer bg-primary text-white;
+}

@@ -51,3 +51,7 @@
   before:font-icomoon
   before:content-['\ea40'];
 }
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}

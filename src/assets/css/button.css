@@ -86,6 +86,8 @@
     focus:border-secondary
     focus:ring-secondary/75
     active:bg-secondary
+    [&.active]:bg-secondary
+    [&.active]:text-white
     active:border-secondary;
   }
 

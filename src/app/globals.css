@@ -6,6 +6,8 @@
 @import "../assets/css/button.css";
 @import "../assets/css/form.css";
 @import "../assets/lib/icomoon/style.css";
+@import "../assets/css/accordion.css";
+@import "../assets/css/additional.css";
 
 :root {
   --background: #ffffff;
@@ -29,6 +31,7 @@
   --color-maroon: #FF5656;
   --color-yellow: #FEEE91;
   --color-dark: #333333;
+  --color-red: #FF0000;
   --font-icomoon: "icomoon";
 }
 

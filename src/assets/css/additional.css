@@ -1,0 +1,14 @@
+.custom-scroll::-webkit-scrollbar,
+.custom-scroll-blue::-webkit-scrollbar {
+  @apply
+  h-1.5;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  @apply
+  bg-primary/20 rounded-2xl;
+}
+.custom-scroll-blue::-webkit-scrollbar-thumb {
+  @apply
+  bg-secondary/20;
+}

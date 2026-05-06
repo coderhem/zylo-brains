@@ -4,6 +4,7 @@ import FancyboxWrapper from '@/hooks/fancyBox';
 
 type Props = {
  cardTitle?: string,
+ cardTitleClass?: string,
  cardDescription: string,
  ctaText?: string,
  ctaLink?: string,
@@ -11,19 +12,31 @@ type Props = {
  iconClass?: string,
  bgColor?: string,
  borderColor?: string;
+ category?: string;
+ iconText?: string;
+ currentPage: number;
 }
 
-const ServiceCard = ({ cardTitle, cardDescription, ctaText, ctaLink, learnIconClass, iconClass, bgColor, borderColor }: Props) => {
+const ServiceCard = ({ cardTitle, cardTitleClass, cardDescription, ctaText, ctaLink, learnIconClass, iconClass, bgColor, borderColor, category, iconText, currentPage }: Props) => {
 
  return (
-  <div className={`shadow rounded-md bg-white p-8 border-t-4 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 group ${borderColor}`} data-aos="fade-up">
+  <div className={`shadow rounded-md bg-white p-8 border-t-4 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 group h-full ${borderColor}`}>
    {iconClass &&
     <div className={`${bgColor} inline-flex justify-center items-center size-14 lg:size-16 mb-5 rounded-md transition-all duration-300 group-hover:scale-110 group-hover:shadow`}>
-     <i className={`${iconClass || ""} text-2xl`}></i>
+     {iconClass &&
+      <i className={`${iconClass || ""} text-2xl`}></i>
+     }
+    </div>
+   }
+   {iconText &&
+    <div className={`${bgColor} inline-flex justify-center items-center min-w-20 p-3 w-max mb-5 rounded-md transition-all duration-300 group-hover:scale-110 group-hover:shadow`}>
+     {iconText &&
+      <span className={`font-extrabold text-xl`}>{iconText}</span>
+     }
     </div>
    }
    {cardTitle &&
-    <h3 className='h4 mb-2'>{cardTitle}</h3>
+    <h4 className={`mb-2 ${cardTitleClass}`}>{cardTitle}</h4>
    }
    {cardDescription &&
     <div dangerouslySetInnerHTML={{ __html: cardDescription }} />
@@ -33,7 +46,7 @@ const ServiceCard = ({ cardTitle, cardDescription, ctaText, ctaLink, learnIconCl
      <a href={ctaLink} className={`learn-more ${learnIconClass}`} data-fancybox>{ctaText}</a>
     </div>
    }
-   <FancyboxWrapper>
+   <FancyboxWrapper currentPage={currentPage}>
     <div className="hidden max-w-full mx-auto" id='inquery'>
      <PopupForm />
     </div>

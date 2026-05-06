@@ -11,9 +11,10 @@ type Props = {
   students?: string,
   cardLink?: string,
   list?: [],
+  currentPage: number
 }
 
-const TrainingCard = ({ customClass, cardTitle, timeIcon, time, userIcon, students, cardLink }: Props) => {
+const TrainingCard = ({ customClass, currentPage, cardTitle, timeIcon, time, userIcon, students, cardLink }: Props) => {
   return (
     <div className={`${customClass} relative border border-secondary/30 rounded-xl transition-all duration-300 bg-white shadow hover:shadow-xl`}>
       <div className="mb-5">
@@ -51,7 +52,7 @@ const TrainingCard = ({ customClass, cardTitle, timeIcon, time, userIcon, studen
       <div className="absolute -right-3 -top-3 bg-primary text-white rounded-full py-1 px-3">
         <span className="font-semibold text-sm">Internship Available</span>
       </div>
-      <FancyboxWrapper>
+      <FancyboxWrapper currentPage={currentPage}>
         <div className="hidden max-w-full mx-auto" id='contact'>
           <PopupForm />
         </div>

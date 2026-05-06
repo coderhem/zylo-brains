@@ -1,4 +1,62 @@
 {
+  "techStackData": [
+    {
+      "imgSrc": "/images/html-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "HTML Icon Image",
+      "iconTitle": "HTML"
+    },
+    {
+      "imgSrc": "/images/css-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "CSS Icon Image",
+      "iconTitle": "CSS"
+    },
+    {
+      "imgSrc": "/images/react-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "React Icon Image",
+      "iconTitle": "React"
+    },
+    {
+      "imgSrc": "/images/java-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "Java Icon Image",
+      "iconTitle": "Java"
+    },
+    {
+      "imgSrc": "/images/html-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "HTML Icon Image",
+      "iconTitle": "HTML"
+    },
+    {
+      "imgSrc": "/images/css-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "CSS Icon Image",
+      "iconTitle": "CSS"
+    },
+    {
+      "imgSrc": "/images/react-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "React Icon Image",
+      "iconTitle": "React"
+    },
+    {
+      "imgSrc": "/images/java-icon.png",
+      "imgWidth": 60,
+      "imgHeight": 50,
+      "imgAlt": "Java Icon Image",
+      "iconTitle": "Java"
+    }
+  ],
   "serviceData": [
     {
       "cardTitle": "Web Development",
@@ -81,6 +139,7 @@
       "userIcon": "icon-user",
       "students": "30+ students",
       "cardLink": "#inquery",
+      "category": "AI Progarms",
       "languageList": [
         {
           "name": "React"
@@ -103,6 +162,167 @@
       "userIcon": "icon-user",
       "students": "30+ students",
       "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
       "languageList": [
         {
           "name": "Java"
@@ -122,6 +342,7 @@
       "userIcon": "icon-user",
       "students": "30+ students",
       "cardLink": "#inquery",
+      "category": "Full Stack Development",
       "languageList": [
         {
           "name": "Test"
@@ -254,6 +475,169 @@
           "link": "https://maps.app.goo.gl/Qmg2f4W1zB71aFRa8"
         }
       ]
+    }
+  ],
+  "trainingPageData": [
+    {
+      "cardTitle": "AI Training",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "AI",
+      "bgColor": "bg-primary/20 text-primary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-primary",
+      "category": "AI Progarms"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Web Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "WD",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Frontend Development"
+    },
+    {
+      "cardTitle": "Java Training",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "Java",
+      "bgColor": "bg-primary/20 text-primary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-primary",
+      "category": "Backend Development"
+    },
+    {
+      "cardTitle": "Mern Stack Development",
+      "cardTitleClass": "h5",
+      "cardDescription": "Custom web applications built with modern frameworks and best practices.",
+      "iconText": "MERN",
+      "bgColor": "bg-secondary/20 text-secondary",
+      "ctaText": "inquery",
+      "ctaLink": "#inquery",
+      "cardTheme": "blue",
+      "borderColor": "border-secondary",
+      "learnIconClass": "text-secondary hover:text-secondary/70",
+      "category": "Full Stack Development"
+    }
+  ],
+  "accordionButtonData": [
+    {
+      "accordionBtn": "All Programs"
+    },
+    {
+      "accordionBtn": "Full Stack Development"
+    },
+    {
+      "accordionBtn": "AI Progarms"
+    },
+    {
+      "accordionBtn": "Backend Development"
+    },
+    {
+      "accordionBtn": "UI/UX"
+    },
+    {
+      "accordionBtn": "Frontend Development"
     }
   ]
 }
