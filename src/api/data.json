@@ -140,6 +140,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "AI Progarms",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "React"
@@ -163,6 +166,67 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
+      "languageList": [
+        {
+          "name": "Java"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Spring Boot"
+        }
+      ],
+      "ctaList": [
+        {
+          "cardLinkText": "View Details",
+          "cardLink": "/services/training/courses",
+          "cardLinkClass": "btn btn-blue rounded-none w-1/3 focus:ring-0 text-sm"
+        },
+        {
+          "cardLinkText": "Share",
+          "shareIcon": "icon-share pr-1",
+          "cardLink": "#",
+          "cardLinkClass": "btn btn-outline rounded-none w-1/3 rounded-br-lg focus:ring-0 text-sm"
+        }
+      ]
+    },
+    {
+      "cardTitle": "Backend Development",
+      "time": "2 Months",
+      "timeIcon": "icon-clock",
+      "userIcon": "icon-user",
+      "students": "30+ students",
+      "cardLink": "#inquery",
+      "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -183,6 +247,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -203,6 +270,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -223,6 +293,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -243,6 +316,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -263,6 +339,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -283,46 +362,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Backend Development",
-      "languageList": [
-        {
-          "name": "Java"
-        },
-        {
-          "name": "MongoDB"
-        },
-        {
-          "name": "Spring Boot"
-        }
-      ]
-    },
-    {
-      "cardTitle": "Backend Development",
-      "time": "2 Months",
-      "timeIcon": "icon-clock",
-      "userIcon": "icon-user",
-      "students": "30+ students",
-      "cardLink": "#inquery",
-      "category": "Backend Development",
-      "languageList": [
-        {
-          "name": "Java"
-        },
-        {
-          "name": "MongoDB"
-        },
-        {
-          "name": "Spring Boot"
-        }
-      ]
-    },
-    {
-      "cardTitle": "Backend Development",
-      "time": "2 Months",
-      "timeIcon": "icon-clock",
-      "userIcon": "icon-user",
-      "students": "30+ students",
-      "cardLink": "#inquery",
-      "category": "Backend Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Java"
@@ -343,6 +385,9 @@
       "students": "30+ students",
       "cardLink": "#inquery",
       "category": "Full Stack Development",
+      "popupCtaText": "Join",
+      "popupCtaClass": "btn btn-primary rounded-none w-1/3 rounded-bl-lg focus:ring-0 text-sm",
+      "popupCtaLink": "#inquery",
       "languageList": [
         {
           "name": "Test"
@@ -639,5 +684,81 @@
     {
       "accordionBtn": "Frontend Development"
     }
-  ]
+  ],
+  "trainingFeatureCard": [
+    {
+      "cardTitle": "Structured Course Curriculum",
+      "description": "Strengthen your professional growth with essential soft skills training focused on communication, leadership, teamwork, and overall career development.",
+      "cardLogoSrc": "/images/icon.png",
+      "logoWidth": 50,
+      "logoHeight": 50,
+      "logoAlt": "Training Featured Card Content"
+    },
+    {
+      "cardTitle": "Experienced Industry Trainers",
+      "description": "Learn directly from highly skilled professionals with real industry experience who bring practical knowledge and real-world insights into every session.",
+      "cardLogoSrc": "/images/icon.png",
+      "logoWidth": 50,
+      "logoHeight": 50,
+      "logoAlt": "Training Featured Card Content"
+    },
+    {
+      "cardTitle": "24/7 Flexible Learning Access",
+      "description": "Access your learning materials anytime, anywhere. Study at your own pace with continuous availability of course resources.",
+      "cardLogoSrc": "/images/icon.png",
+      "logoWidth": 50,
+      "logoHeight": 50,
+      "logoAlt": "Training Featured Card Content"
+    },
+    {
+      "cardTitle": "Career & Placement Support Programs",
+      "description": "Get dedicated support through job-focused training programs designed to help you build confidence and secure better career opportunities.",
+      "cardLogoSrc": "/images/icon.png",
+      "logoWidth": 50,
+      "logoHeight": 50,
+      "logoAlt": "Training Featured Card Content"
+    },
+    {
+      "cardTitle": "Practical Hands-on Training",
+      "description": "Gain real experience by working on practical assignments and live projects that strengthen your technical and problem-solving skills.",
+      "cardLogoSrc": "/images/icon.png",
+      "logoWidth": 50,
+      "logoHeight": 50,
+      "logoAlt": "Training Featured Card Content"
+    },
+    {
+      "cardTitle": "Modern Lab Facilities with Expert Guidance",
+      "description": "Learn in a well-equipped lab environment supported by experienced mentors who guide you through every step of your practical learning journey.",
+      "cardLogoSrc": "/images/icon.png",
+      "logoWidth": 50,
+      "logoHeight": 50,
+      "logoAlt": "Training Featured Card Content"
+    }
+  ],
+  "accodionData": [
+  {
+    "title": "Module: 1",
+    "content": "Next.js is a React framework for building web applications."
+  },
+  {
+    "title": "Module: 1",
+    "content": "Next.js is a React framework for building web applications."
+  },
+  {
+    "title": "Module: 1",
+    "content": "Next.js is a React framework for building web applications."
+  },
+  {
+    "title": "Module: 1",
+    "content": "Next.js is a React framework for building web applications."
+  },
+  {
+    "title": "Module: 1",
+    "content": "Next.js is a React framework for building web applications."
+  },
+  {
+    "title": "What is Next.js?",
+    "content": "Next.js is a React framework for building web applications."
+  }
+]
 }

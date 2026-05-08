@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Mousewheel, Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 import TechStackCard from "@/components/cards/techStackCard";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -40,65 +41,7 @@ export default function Home() {
     <>
       <Banner />
       {/* End Banner Section */}
-      <section className="bg-linear-to-b from-secondary to-dark-blue">
-        {/* <div className="container"> */}
-        <BlockTitle
-        customClass="py-7 text-center text-white/90 [&_h2]:mb-1"
-          title="Technologies"
-          orangeText="We Master"
-          description="Cutting-edge tools and frameworks to build the future"
-        />
-        <Swiper
-          allowTouchMove={true}
-          simulateTouch={true}
-          slidesPerView={3}
-          spaceBetween={25}
-          grabCursor={true}
-          loop={true}
-          speed={3000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          // pagination={{ clickable: true }}
-          keyboard={true}
-          modules={[Autoplay, Pagination, Mousewheel, Keyboard]}
-          className="testimonial"
-          breakpoints={{
-            320: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            640: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 6,
-              spaceBetween: 25,
-            },
-          }}
-          data-aos="fade-right"
-        >
-          {Data.techStackData.map((item, index) => (
-            <SwiperSlide key={index} className="h-auto! pb-8">
-              <TechStackCard
-                imgSrc={item.imgSrc}
-                imgWidth={item.imgWidth}
-                imgHeight={item.imgHeight}
-                imgAlt={item.imgAlt}
-                iconTitle={item.iconTitle}
-              />
-            </SwiperSlide >
-          ))}
-        </Swiper>
-        {/* </div> */}
-      </section>
-      {/* Techstack */}
+
       <section className="py-16 bg-linear-to-tr from-primary/5 to-transparent">
         <div className="container" data-aos="fade-up">
           <BlockTitle
@@ -123,6 +66,9 @@ export default function Home() {
                 />
               </div>
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/services/product-development" className="btn btn-blue min-w-60">Expolre More</Link>
           </div>
         </div>
       </section>
@@ -186,7 +132,9 @@ export default function Home() {
                     timeIcon={item.timeIcon}
                     userIcon={item.userIcon}
                     students={item.students}
-                    cardLink={item.cardLink}
+                    popupCtaText={item.popupCtaText}
+                    popupCtaClass={item.popupCtaClass}
+                    popupCtaLink={item.popupCtaLink}
                     currentPage={currentPage}
                   />
                 </div>
@@ -229,9 +177,70 @@ export default function Home() {
               </button>
             </div>
           )}
+          <div className="text-center pt-20">
+            <Link href="/services/training" className="btn btn-primary">Explore More</Link>
+          </div>
         </div>
       </section>
-      {/* End Achivements Section */}
+      {/* End Professional Training Section */}
+
+      <section className="bg-linear-to-b from-secondary to-dark-blue" data-aos="fade-up">
+        {/* <div className="container"> */}
+        <BlockTitle
+          customClass="py-7 text-center text-white/90 [&_h2]:mb-1"
+          title="Technologies"
+          orangeText="We Master"
+          description="Cutting-edge tools and frameworks to build the future"
+        />
+        <Swiper
+          allowTouchMove={true}
+          simulateTouch={true}
+          slidesPerView={3}
+          spaceBetween={25}
+          grabCursor={true}
+          loop={true}
+          speed={3000}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          // pagination={{ clickable: true }}
+          keyboard={true}
+          modules={[Autoplay, Pagination, Mousewheel, Keyboard]}
+          className="testimonial"
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 25,
+            },
+          }}>
+          {Data.techStackData.map((item, index) => (
+            <SwiperSlide key={index} className="h-auto! pb-8">
+              <TechStackCard
+                imgSrc={item.imgSrc}
+                imgWidth={item.imgWidth}
+                imgHeight={item.imgHeight}
+                imgAlt={item.imgAlt}
+                iconTitle={item.iconTitle}
+              />
+            </SwiperSlide >
+          ))}
+        </Swiper>
+        {/* </div> */}
+      </section>
+      {/* End Techstack */}
 
       <section className="bg-white py-14 md:py-16 lg:py-20" data-aos="fade-up">
         <div className="container">
@@ -281,6 +290,9 @@ export default function Home() {
           </Swiper>
         </div>
       </section >
+      {/* End Testimonial Section */}
+
+
     </>
   );
 }

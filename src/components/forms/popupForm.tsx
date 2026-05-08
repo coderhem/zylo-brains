@@ -9,10 +9,17 @@ const formSchema = z.object({
  fullName: z.string().min(2, "Full name is required"),
  email: z.string().email("Invalid email address"),
  phone: z.string().min(10, "Phone number must be at least 10 digits"),
+ service: z.string().min(2, "Service is required"),
 })
 
+type Props = {
+ formTitle?: string,
+ orangeText?: string,
+ description?: string,
+}
+
 type FormData = z.infer<typeof formSchema>
-const PopupForm = (props: any) => {
+const PopupForm = ({ formTitle, orangeText, description }: Props) => {
  const {
   register,
   handleSubmit,
@@ -33,7 +40,7 @@ const PopupForm = (props: any) => {
  }
 
  return (
-  <div className="flex max-md:flex-col-reverse items-center flex-wrap gap-y-5 -mx-3 overflow-hidden relative before:absolute before:size-28 before:bg-primary/20 before:rounded-full before:-right-6 before:-bottom-8 py-10">
+  <div className="flex max-md:flex-col-reverse items-center flex-wrap gap-y-5 -mx-3 overflow-hidden relative before:absolute before:size-28 before:bg-primary/20 before:rounded-full before:-right-6 before:-bottom-8 py-4">
    <div className="w-full md:w-1/2 px-3">
     {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, distinctio. Deleniti eius odio ipsam quos minus corporis voluptate facilis, enim eveniet ipsa doloremque nostrum corrupti eaque! Numquam in eum laboriosam.</p> */}
     <Image
@@ -45,24 +52,15 @@ const PopupForm = (props: any) => {
     />
    </div>
    <div className='w-full md:w-1/2 popup-form form-wrapper px-3'>
-    <div className="mb-6 max-w-80">
-     <h2 className="h4 mb-0"><span className="text-primary">Join & Book</span> Your Seat Now</h2>
-     <p>Take the first step toward your success. Reserve your seat and start your journey with us.</p>
+    <div className="mb-6 max-w-83">
+     <h2 className="h4 mb-0"><span className="text-primary">{orangeText}</span> {formTitle}</h2>
+     {description && (
+      <div
+       className="text-sm"
+       dangerouslySetInnerHTML={{ __html: description }}
+      />
+     )}
     </div>
-    {/* <form action="">
-     <div className="form-group">
-      <input type="text" placeholder='Full Name' name='fullName' className='form-control' />
-     </div>
-     <div className="form-group">
-      <input type="email" placeholder='Email Address' name='email' className='form-control' />
-     </div>
-     <div className="form-group">
-      <input type="text" placeholder='Phone Number' name='phone' className='form-control' />
-     </div>
-     <div className="mt-8 px-2">
-      <button className="btn btn-primary icon before:content-['\e904'] rounded-md">Submit</button>
-     </div>
-    </form> */}
     <form onSubmit={handleSubmit(onSubmit)}>
      {/* Full Name */}
      <div className="form-group">
@@ -102,6 +100,18 @@ const PopupForm = (props: any) => {
        <p className="text-red-500 text-sm">{errors.phone.message}</p>
       )}
      </div>
+     {/* Phone */}
+     <div className="form-group">
+      <input
+       type="text"
+       placeholder="What You Want..?"
+       className="form-control"
+       {...register("service")}
+      />
+      {errors.service && (
+       <p className="text-red-500 text-sm">{errors.service.message}</p>
+      )}
+     </div>
 
      {/* Button */}
      <div className="mt-8 px-2">
@@ -110,7 +120,7 @@ const PopupForm = (props: any) => {
        disabled={isSubmitting}
        className="btn btn-primary icon before:content-['\e904'] rounded-md font-semibold"
       >
-       {isSubmitting ? "Sending..." : "Send Inquery"}
+       {isSubmitting ? "Sending..." : "Send"}
       </button>
      </div>
     </form>

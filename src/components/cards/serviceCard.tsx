@@ -14,7 +14,7 @@ type Props = {
  borderColor?: string;
  category?: string;
  iconText?: string;
- currentPage: number;
+ currentPage?: number;
 }
 
 const ServiceCard = ({ cardTitle, cardTitleClass, cardDescription, ctaText, ctaLink, learnIconClass, iconClass, bgColor, borderColor, category, iconText, currentPage }: Props) => {
@@ -47,8 +47,12 @@ const ServiceCard = ({ cardTitle, cardTitleClass, cardDescription, ctaText, ctaL
     </div>
    }
    <FancyboxWrapper currentPage={currentPage}>
-    <div className="hidden max-w-full mx-auto" id='inquery'>
-     <PopupForm />
+    <div className="hidden max-w-full mx-auto p-2!" id='inquery'>
+     <PopupForm
+      formTitle="Inquiry Form"
+      orangeText="Fill Out the"
+      description="<p>Please fill in your details and let us know your service requirements. Our team will contact you shortly.</p>"
+     />
     </div>
    </FancyboxWrapper>
   </div>

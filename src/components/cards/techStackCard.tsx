@@ -13,7 +13,7 @@ type Props = {
 
 const TechStackCard = ({ imgSrc, imgWidth, imgHeight, imgAlt, iconSvg, svgClass, iconTitle }: Props) => {
   return (
-    <div className='shadow bg-white/5 h-full hover:shadow-primary/20 hover:bg-primary/10 hover:scale-105 group px-4 py-3 rounded border border-primary/20 transition-all duration-500 hover:shadow-xl'>
+    <div className='shadow bg-white h-full hover:shadow-primary/20 hover:bg-white hover:scale-105 group px-4 py-3 rounded border border-primary/20 transition-all duration-500 hover:shadow-xl'>
       {imgSrc &&
         <div className="flex justify-center mb-3">
           <Image
@@ -21,7 +21,7 @@ const TechStackCard = ({ imgSrc, imgWidth, imgHeight, imgAlt, iconSvg, svgClass,
             width={imgWidth}
             height={imgHeight}
             alt={imgAlt}
-            className='grayscale group-hover:grayscale-0 transition-all duration-500'
+            className='group-hover:grayscale-0 transition-all duration-500'
           />
         </div>
       }

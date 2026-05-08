@@ -9,12 +9,14 @@ type Props = {
   time?: string,
   userIcon?: string,
   students?: string,
-  cardLink?: string,
+  popupCtaLink?: string,
+  popupCtaClass?: string,
+  popupCtaText?: string,
   list?: [],
   currentPage: number
 }
 
-const TrainingCard = ({ customClass, currentPage, cardTitle, timeIcon, time, userIcon, students, cardLink }: Props) => {
+const TrainingCard = ({ customClass, currentPage, cardTitle, timeIcon, time, userIcon, students, popupCtaLink, popupCtaClass, popupCtaText }: Props) => {
   return (
     <div className={`${customClass} relative border border-secondary/30 rounded-xl transition-all duration-300 bg-white shadow hover:shadow-xl`}>
       <div className="mb-5">
@@ -23,10 +25,10 @@ const TrainingCard = ({ customClass, currentPage, cardTitle, timeIcon, time, use
           width={300}
           height={300}
           alt="Featured Image"
-          className="rounded-tl-xl rounded-tr-xl"
+          className="rounded-tl-xl rounded-tr-xl w-full"
         />
       </div>
-      <div className="px-4 pb-4">
+      <div className="px-4">
         {cardTitle &&
           <h2 className="h5 mb-3 font-lato font-semibold">{cardTitle}</h2>
         }
@@ -40,18 +42,36 @@ const TrainingCard = ({ customClass, currentPage, cardTitle, timeIcon, time, use
             <span>{students}</span>
           </div>
         </div>
-        <ul className="flex gap-2 flex-wrap pt-3 [&_li]:relative [&_li]:pl-6 [&_li]:before:absolute [&_li]:before:size-2 [&_li]:before:left-0 [&_li]:before:font-icomoon [&_li]:before:content-['\e9b8'] [&_li]:before:text-gold">
+        <ul className="flex gap-2 mb-4 flex-wrap pt-3 [&_li]:relative [&_li]:pl-6 [&_li]:before:absolute [&_li]:before:size-2 [&_li]:before:left-0 [&_li]:before:font-icomoon [&_li]:before:content-['\e9b8'] [&_li]:before:text-gold">
           {Data.trainingData[0].languageList.map((item, index) => (
             <li key={index}>
               {typeof item === "string" ? item : item.name}
             </li>
           ))}
         </ul>
+        {/* {cardLinkText && */}
+        <div className="flex gap-2 -mx-4 mt-8 max-sm:[&_a]:text-xs [&_a]:px-1">
+          {popupCtaText &&(
+            <a href={popupCtaLink} className={popupCtaClass} data-fancybox>
+              {popupCtaText}
+            </a>
+          )}
+          {Data.trainingData[2].ctaList?.map((item, index) => (
+            <a href={item.cardLink} className={item.cardLinkClass} key={index}>
+              {item.shareIcon && (
+                <i className={item.shareIcon}></i>
+              )}
+              {item.cardLinkText}
+            </a>
+          ))}
+        </div>
+        {/* } */}
       </div>
-      <a href={cardLink} className="stretched-link" data-fancybox></a>
+      {/* <a href={cardLink} className="stretched-link" data-fancybox></a> */}
       <div className="absolute -right-3 -top-3 bg-primary text-white rounded-full py-1 px-3">
         <span className="font-semibold text-sm">Internship Available</span>
       </div>
+
       <FancyboxWrapper currentPage={currentPage}>
         <div className="hidden max-w-full mx-auto" id='contact'>
           <PopupForm />

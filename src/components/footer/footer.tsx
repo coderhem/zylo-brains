@@ -3,7 +3,7 @@ import Data from '@/api/data.json'
 
 const Footer = () => {
  return (
-  <footer className='pt-14 bg-linear-to-r from-dark-blue to-light-blue text-white' data-aos="fade-up">
+  <footer className='pt-14 bg-linear-to-r from-dark-blue to-light-blue text-white'>
    <div className="container">
     <div className="flex gap-y-9 flex-wrap justify-between -mx-5 py-3 text-white/80 mb-6">
      <div className="w-full md:w-1/2 lg:w-1/3 px-5">

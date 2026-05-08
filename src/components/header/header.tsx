@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import navbarLinks from './header.json'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import Link from 'next/link';
 
 type HeaderProps = {
   passHeaderHeight: (height: number) => void;
@@ -51,38 +52,33 @@ const Header = ({ passHeaderHeight }: any) => {
     <header className='site-header bg-white shadow-2xl py-4' ref={headerRef}>
       <div className="container">
         <div className="flex items-center justify-between">
-          <a href="/">
+          <Link href="/">
             <Image
-              src="/images/header-logo.png"
+              src="/images/header-logo-img.png"
               width={190}
               height={90}
               alt='Header Logo'
               className='max-sm:max-w-32'
-            /></a>
+            /></Link>
           <nav className='navbar flex -mx-4'>
-            {/* <ul className='hidden px-4 lg:flex items-center -mx-4 [&_li]:px-4'>
-              {navbarLinks.links.map((item, index) => (
-                <li key={index}><a className='link' href={item.path}>{item.label}</a></li>
-              ))}
-            </ul> */}
             <ul className='hidden px-4 lg:flex items-center -mx-4'>
               {navbarLinks.links.map((item) => (
                 <li key={item.label} className="relative group px-4">
 
                   {/* Parent Link */}
-                  <a href={item.path} className="link flex items-center gap-1">
+                  <Link href={item.path} className="link flex items-center gap-1">
                     {item.label}
                     {item.dropdown && <span className="text-xs transition-all duration-300 group-hover:rotate-180"><i className="icon-dropdown"></i></span>}
-                  </a>
+                  </Link>
 
                   {/* Dropdown */}
                   {item.dropdown && (
                     <ul className="absolute left-0 top-full mt-2 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-60 z-50">
                       {item.dropdown.map((subItem) => (
                         <li key={subItem.label}>
-                          <a href={subItem.path} className="block px-4 py-3 text-sm text-dark hover:bg-primary hover:text-white transition">
+                          <Link href={subItem.path} className="block px-4 py-3 text-sm text-dark hover:bg-primary hover:text-white transition">
                             {subItem.label}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -93,50 +89,18 @@ const Header = ({ passHeaderHeight }: any) => {
             </ul>
             <div className="mobile-menu" style={{ top: `${headerHeight}px` }}>
               <ul className='px-4 flex flex-col gap-y-7 justify-center items-center -mx-4 [&_li]:px-4'>
-                {/* {navbarLinks.links.map((item, index) => (
-                  <li key={index}><a className='link' href={item.path}>{item.label}</a></li>
-                ))} */}
-
-                {/* {navbarLinks.links.map((item) => (
-                  <li key={item.label} className="relative group">
-                 
-                    <span className='flex'>
-                      <a href={item.path} className="link flex items-center gap-1">
-                        {item.label}
-                      </a>
-                      {item.dropdown && <button className="link mx-2 text-xs transition-all duration-300 group-hover:rotate-180 hover:before:hidden" onClick={() =>setOpenMenu(openMenu === item.label ? null : item.label)}><i className="icon-dropdown"></i></button>}
-                    </span>
-
-                    {item.dropdown && openMenu === item.label && (
-                      <ul className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-60 z-50">
-                        {item.dropdown.map((subItem) => (
-                          <li key={subItem.label}>
-                            <a
-                              href={subItem.path}
-                              className="block px-4 py-2 text-sm text-dark hover:bg-primary hover:text-white transition"
-                            >
-                              {subItem.label}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-
-                  </li>
-                ))} */}
-
                 {navbarLinks.links.map((item) => (
                   <li key={item.label} className="w-full text-center">
 
                     {/* Parent row */}
                     <div className="flex justify-center items-center gap-2">
-                      <a
+                      <Link
                         href={item.path}
                         className="link"
                         onClick={() => setHamburger(false)}
                       >
                         {item.label}
-                      </a>
+                      </Link>
 
                       {item.dropdown && (
                         <button onClick={() => setOpenMenu(openMenu === item.label ? null : item.label)
@@ -155,13 +119,11 @@ const Header = ({ passHeaderHeight }: any) => {
                       <ul className="mt-3 inline-flex flex-col gap-3 bg-secondary rounded shadow">
                         {item.dropdown.map((subItem) => (
                           <li key={subItem.label} className='hover:bg-dark-blue hover:text-white transition-all duration-300 py-2'>
-                            <a
-                              href={subItem.path}
-                              onClick={() => setHamburger(false)}
+                            <Link href={subItem.path} onClick={() => setHamburger(false)}
                               className="text-sm text-white"
                             >
                               {subItem.label}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -177,9 +139,8 @@ const Header = ({ passHeaderHeight }: any) => {
                 <span></span>
                 <span></span>
               </button>
-              <a href="tel:9865900739" className='btn btn-primary max-md:size-12 max-md:flex max-md:justify-center max-md:items-center'>
-                <i className="icon-phone md:pr-1"></i>
-                <span className='max-md:hidden'>Call Today</span>
+              <a href="tel:9865900739" className='btn btn-primary size-12 flex justify-center items-center'>
+                <i className="icon-phone"></i>
               </a>
             </div>
           </nav>

@@ -45,3 +45,15 @@
  @apply
  cursor-pointer bg-primary text-white;
 }
+
+.accordion-wrapper:nth-child(odd) .accordion-button {
+  @apply bg-primary/5;
+}
+
+.accordion-wrapper:nth-child(even) .accordion-button {
+  @apply bg-blue-500/5;
+}
+
+.accordion-wrapper .accordion-button {
+  @apply w-full px-4 py-3 transition border-b border-black/10;
+}

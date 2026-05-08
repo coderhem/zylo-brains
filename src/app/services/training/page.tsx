@@ -3,6 +3,7 @@ import Data from '@/api/data.json'
 import { useEffect, useState } from 'react'
 import TrainingCard from '@/components/cards/trainingCard';
 import BlockTitle from '@/components/blockTitle/blockTitle';
+import TtrainingFeaturesCard from '@/components/cards/trainingFeaturesCard';
 
 const Training = () => {
   const [activeFilter, setActiveFilter] = useState(
@@ -64,7 +65,9 @@ const Training = () => {
                     timeIcon={item.timeIcon}
                     userIcon={item.userIcon}
                     students={item.students}
-                    cardLink={item.cardLink}
+                    popupCtaText={item.popupCtaText}
+                    popupCtaClass={item.popupCtaClass}
+                    popupCtaLink={item.popupCtaLink}
                     currentPage={currentPage}
                   />
                 </div>
@@ -107,6 +110,30 @@ const Training = () => {
               </button>
             </div>
           )}
+        </div>
+      </section>
+      <section className='bg-white py-10 md:py-16 lg:py-20'>
+        <div className="container">
+          <BlockTitle
+            title='Training'
+            orangeText='Benefits & Outcomes'
+            description='Explore the key features of our training program, designed to provide practical skills, hands-on learning, and real-world experience to help you grow in your career.'
+            customClass='mb-10 max-w-4xl'
+          />
+          <div className="flex flex-wrap gap-y-6 -mx-3">
+            {Data.trainingFeatureCard.map((item, index) => (
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3">
+                <TtrainingFeaturesCard key={index}
+                  cardLogoSrc={item.cardLogoSrc}
+                  logoWidth={item.logoWidth}
+                  logoHeight={item.logoHeight}
+                  logoAlt={item.logoAlt}
+                  cardTitle={item.cardTitle}
+                  description={item.description}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
