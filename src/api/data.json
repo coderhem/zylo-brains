@@ -502,22 +502,26 @@
         {
           "linkText": "+977 9851345885",
           "iconClass": "icon-phone",
-          "link": "tel:9851345885"
+          "link": "tel:9851345885",
+          "linkTarget": "_self"
         },
         {
           "linkText": "+977 015921848",
           "iconClass": "icon-landline",
-          "link": "tel:015921848"
+          "link": "tel:015921848",
+          "linkTarget": "_self"
         },
         {
           "linkText": "business@zylobrains.com",
           "iconClass": "icon-email",
-          "link": "mailto:business@zylobrains.com"
+          "link": "mailto:business@zylobrains.com",
+          "linkTarget": "_self"
         },
         {
           "linkText": "Balkumari Bridge, Lalitpur, Nepal",
           "iconClass": "icon-pin",
-          "link": "https://maps.app.goo.gl/Qmg2f4W1zB71aFRa8"
+          "link": "https://maps.app.goo.gl/Qmg2f4W1zB71aFRa8",
+          "linkTarget": "_blank"
         }
       ]
     }
@@ -735,30 +739,56 @@
       "logoAlt": "Training Featured Card Content"
     }
   ],
-  "accodionData": [
-  {
-    "title": "Module: 1",
-    "content": "Next.js is a React framework for building web applications."
-  },
-  {
-    "title": "Module: 1",
-    "content": "Next.js is a React framework for building web applications."
-  },
-  {
-    "title": "Module: 1",
-    "content": "Next.js is a React framework for building web applications."
-  },
-  {
-    "title": "Module: 1",
-    "content": "Next.js is a React framework for building web applications."
-  },
-  {
-    "title": "Module: 1",
-    "content": "Next.js is a React framework for building web applications."
-  },
-  {
-    "title": "What is Next.js?",
-    "content": "Next.js is a React framework for building web applications."
-  }
-]
+  "accordionData": [
+    {
+      "title": "Module: 1",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quo quasi nulla repellendus dolores nihil similique, sint natus aliquam ipsum, culpa deleniti aliquid maiores facere voluptate maxime, modi ad recusandae!",
+      "listData": [
+        {
+          "listContent": "List 1",
+          "subList": [
+            {
+              "listContent": "Sub item 1"
+            },
+            {
+              "listContent": "Sub item 2"
+            }
+          ]
+        },
+        {
+          "listContent": "List 2"
+        },
+        {
+          "listContent": "List 3"
+        },
+        {
+          "listContent": "List 4"
+        },
+        {
+          "listContent": "List 5"
+        }
+      ]
+    },
+    {
+      "title": "Module: 2",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quo quasi nulla repellendus dolores nihil similique, sint natus aliquam ipsum, culpa deleniti aliquid maiores facere voluptate maxime, modi ad recusandae!",
+      "listData": [
+        {
+          "listContent": "List 2"
+        },
+        {
+          "listContent": "List 2"
+        },
+        {
+          "listContent": "List 2"
+        },
+        {
+          "listContent": "List 2"
+        },
+        {
+          "listContent": "List 2"
+        }
+      ]
+    }
+  ]
 }

@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import Data from '@/api/data.json'
+import Link from 'next/link'
 
-const Footer = () => {
+type Props = {
+ linkTarget: string
+}
+const Footer = ({ linkTarget }: Props) => {
  return (
   <footer className='pt-14 bg-linear-to-r from-dark-blue to-light-blue text-white'>
    <div className="container">
@@ -60,11 +64,11 @@ const Footer = () => {
       {Data.footerLinks?.length > 0 && (
        <ul className='flex flex-col gap-y-4'>
         {Data.footerLinks[0].contactLinks.map((item, index) => (
-         <li key={index} className='flex gap-3 items-center relative transition-all duration-300 hover:translate-x-1'>
-          <i className={`${item.iconClass} bg-white/30 size-10 flex justify-center items-center rounded-md`}></i>
-          <a href={item.link} className='stretched-link text-white hover:text-primary flex-1'>
+         <li key={index} className='flex group gap-3 items-center relative transition-all duration-300 hover:translate-x-1'>
+          <i className={`${item.iconClass} bg-white/30 size-10 flex justify-center items-center rounded-md transition-all duration-300 group-hover:bg-primary`}></i>
+          <Link href={item.link} target={item.linkTarget} className='stretched-link text-white hover:text-primary flex-1'>
            {item.linkText}
-          </a>
+          </Link>
          </li>
         ))}
        </ul>

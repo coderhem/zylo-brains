@@ -3,16 +3,21 @@ import BlockTitle from '@/components/blockTitle/blockTitle';
 import React, { useState } from 'react';
 import Data from '@/api/data.json';
 import Accordion from '@/components/accordions/accordion';
-type Props = {}
+import { tuple } from 'zod';
+import FancyboxWrapper from '@/hooks/fancyBox';
+import PopupForm from '@/components/forms/popupForm';
+type Props = {
+  currentPage: number
+}
 
-const Courses = ({ }: Props) => {
+const Courses = ({ currentPage }: Props) => {
   const [activeFilter, setActiveFilter] = useState(
     Data.accordionButtonData?.[0]?.accordionBtn || 'Internship'
   )
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleToggle = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    setActiveIndex(activeIndex === index ? -1 : index);
   };
   return (
     <>
@@ -69,16 +74,29 @@ const Courses = ({ }: Props) => {
         </div>
         <div className="container">
           <div className="border border-dark-blue/60 rounded">
-            {Data.accodionData.map((item, index) => (
+            {Data.accordionData?.map((item, index) => (
               <Accordion
                 key={index}
-                title={item.content}
+                title={item.title}
                 content={item.content}
+                listData={item.listData}
                 isOpen={activeIndex === index}
                 onClick={() => handleToggle(index)}
               />
             ))}
           </div>
+          <div className="mt-10 text-center">
+            <a href="#inquery" className='btn btn-primary' data-fancybox>Join Now</a>
+          </div>
+          <FancyboxWrapper currentPage={currentPage}>
+            <div className="hidden max-w-full mx-auto" id='inquery'>
+              <PopupForm
+                orangeText="Fill Out the"
+                formTitle="Inquiry Form"
+                description="Please fill in your details and let us know your service requirements. Our team will contact you shortly."
+              />
+            </div>
+          </FancyboxWrapper>
         </div>
       </section>
     </>

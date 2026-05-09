@@ -3,9 +3,12 @@ import Image from 'next/image'
 import navbarLinks from './header.json'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Link from 'next/link';
+import Data from '@/api/data.json'
 
 type HeaderProps = {
   passHeaderHeight: (height: number) => void;
+  link: string;
+  linkText: string;
 };
 
 const Header = ({ passHeaderHeight }: any) => {
@@ -49,9 +52,37 @@ const Header = ({ passHeaderHeight }: any) => {
   // Mobile Menu
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   return (
-    <header className='site-header bg-white shadow-2xl py-4' ref={headerRef}>
+    <header className='site-header bg-white shadow-2xl' ref={headerRef}>
+      <div className="bg-secondary py-2 text-white">
+        <div className="container">
+          <div className="flex justify-between gap-3">
+            <div className="flex gap-2 justify-between">
+              {Data.footerLinks?.length > 0 && (
+                <ul className='flex gap-4 py-1'>
+                  {Data.footerLinks[0].socialLinks.map((item, index) => (
+                    <li key={index}>
+                      <a href={item.iconLink} className='transition-all duration-300 bg-white/10 hover:bg-primary focus:bg-primary ring-1 ring-transparent focus:ring-white active:bg-primary size-7 flex justify-center items-center rounded-lg text-white text-base'>
+                        <i className={`${item.iconClass}`}></i>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            {/* <ul>
+              {Data.topHeaderLinks.map((item, index)=>(
+              <li key={index}>
+                <a href={item.iconLink} className='transition-all duration-300 bg-white/10 hover:bg-primary focus:bg-primary ring-1 ring-transparent focus:ring-white active:bg-primary size-11 flex justify-center items-center rounded-lg text-white text-xl'>
+                  <i className={`${item.iconClass}`}></i>
+                </a>
+              </li>
+              ))}
+            </ul> */}
+          </div>
+        </div>
+      </div>
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between py-4">
           <Link href="/">
             <Image
               src="/images/header-logo-img.png"

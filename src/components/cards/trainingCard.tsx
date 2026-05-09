@@ -73,8 +73,12 @@ const TrainingCard = ({ customClass, currentPage, cardTitle, timeIcon, time, use
       </div>
 
       <FancyboxWrapper currentPage={currentPage}>
-        <div className="hidden max-w-full mx-auto" id='contact'>
-          <PopupForm />
+        <div className="hidden max-w-full mx-auto" id='inquery'>
+          <PopupForm 
+          orangeText="Fill Out the"
+          formTitle="Inquiry Form"
+          description="Please fill in your details and let us know your service requirements. Our team will contact you shortly."
+          />
         </div>
       </FancyboxWrapper>
     </div>

@@ -5,8 +5,8 @@
         "path": "/"
       },
       {
-        "label": "About",
-        "path": "/about"
+        "label": "About Us",
+        "path": "/about-us"
       },
       {
         "label": "Services",
@@ -29,6 +29,12 @@
       {
         "label": "Contact Us",
         "path": "/contact"
+      }
+    ],
+    "topHeaderLinks":[
+      {
+        "iconLink": "#",
+        "iconClass": "icon-phone"
       }
     ]
 }

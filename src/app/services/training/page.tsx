@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import TrainingCard from '@/components/cards/trainingCard';
 import BlockTitle from '@/components/blockTitle/blockTitle';
 import TtrainingFeaturesCard from '@/components/cards/trainingFeaturesCard';
+import InnerBanner from '@/components/innerBanner/innerBanner';
 
 const Training = () => {
   const [activeFilter, setActiveFilter] = useState(
@@ -32,6 +33,16 @@ const Training = () => {
 
   return (
     <>
+      <InnerBanner
+        imgSrc='/images/banner-image.jpg'
+        imgWidth={300}
+        imgHeight={300}
+        imgAlt='Inner Banner Image'
+        bannerTitle='About'
+        bannerOrangeTitle='Us'
+        description='<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sapiente ad rem quam velit odio ullam. Alias obcaecati nam fugit minima maxime voluptates vitae dolorem. Expedita illum asperiores praesentium?</p>'
+      />
+
       <section className="py-14 md:py-16 lg:py-20" data-aos="fade-up">
         <div className="container">
           <BlockTitle

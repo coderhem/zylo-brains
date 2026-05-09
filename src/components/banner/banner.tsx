@@ -7,6 +7,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import bannerContent from "./bannerData.json";
+import FancyboxWrapper from '@/hooks/fancyBox';
+import PopupForm from '../forms/popupForm';
+import Link from 'next/link';
 
 type BannerItem = {
  imgSrc: string;
@@ -20,10 +23,11 @@ type BannerItem = {
  ctaTwoText: string;
  ctaOneLink: string;
  ctaTwoLink: string;
+ currentPage: number;
 };
 
 
-const Banner: React.FC = () => {
+const Banner: React.FC = ({ currentPage }: any) => {
  const bannerData = bannerContent.bannerData as BannerItem[];
  return (
   <section className='hero'>
@@ -59,8 +63,18 @@ const Banner: React.FC = () => {
           <h1 className='mb-3'>{item.heading}<span className='text-primary'> {item.highlightHeading} </span></h1>
           <div dangerouslySetInnerHTML={{ __html: item.description }} />
           <div className="flex gap-5 pt-8">
-           <a href={`${item.ctaOneLink}`} className='btn btn-primary'>{item.ctaOneText}</a>
-           <a href={`${item.ctaTwoLink}`} className='btn btn-outline'>{item.ctaTwoText}</a>
+           <a href={`${item.ctaOneLink}`} className='btn btn-primary' data-fancybox>{item.ctaOneText}</a>
+           <Link href={`${item.ctaTwoLink}`} className='btn btn-outline'>{item.ctaTwoText}</Link>
+
+           <FancyboxWrapper currentPage={currentPage}>
+            <div className="hidden max-w-full mx-auto" id='inquery'>
+             <PopupForm
+              orangeText="Fill Out the"
+              formTitle="Inquiry Form"
+              description="Please fill in your details and let us know your service requirements. Our team will contact you shortly."
+             />
+            </div>
+           </FancyboxWrapper>
           </div>
          </div>
         </div>

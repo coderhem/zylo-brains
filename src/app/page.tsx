@@ -291,8 +291,6 @@ export default function Home() {
         </div>
       </section >
       {/* End Testimonial Section */}
-
-
     </>
   );
 }

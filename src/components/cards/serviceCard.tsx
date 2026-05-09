@@ -14,10 +14,10 @@ type Props = {
  borderColor?: string;
  category?: string;
  iconText?: string;
- currentPage?: number;
+ currentPage: number;
 }
 
-const ServiceCard = ({ cardTitle, cardTitleClass, cardDescription, ctaText, ctaLink, learnIconClass, iconClass, bgColor, borderColor, category, iconText, currentPage }: Props) => {
+const ServiceCard = ({ cardTitle, currentPage, cardTitleClass, cardDescription, ctaText, ctaLink, learnIconClass, iconClass, bgColor, borderColor, category, iconText, }: Props) => {
 
  return (
   <div className={`shadow rounded-md bg-white p-8 border-t-4 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 group h-full ${borderColor}`}>
