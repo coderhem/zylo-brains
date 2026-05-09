@@ -3,7 +3,7 @@ import Data from '@/api/data.json'
 import Link from 'next/link'
 
 type Props = {
- linkTarget: string
+ linkTarget?: string
 }
 const Footer = ({ linkTarget }: Props) => {
  return (
