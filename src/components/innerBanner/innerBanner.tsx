@@ -3,11 +3,11 @@ import Breadcrumb from '../breadcrumbs/breadCrumbs';
 
 type Props = {
   imgSrc: string;
-  imgWidth: number;
-  imgHeight: number;
+  imgWidth?: number;
+  imgHeight?: number;
   imgAlt: string;
-  bannerTitle: string;
-  bannerOrangeTitle: string;
+  bannerTitle?: string;
+  bannerOrangeTitle?: string;
   description: string;
 }
 

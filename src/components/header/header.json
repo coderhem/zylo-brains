@@ -33,8 +33,19 @@
     ],
     "topHeaderLinks":[
       {
-        "iconLink": "#",
-        "iconClass": "icon-phone"
+        "iconLink": "tel:9851345885",
+        "iconClass": "icon-phone",
+        "anchorText": "9851345885"
+      },
+      {
+        "iconLink": "tel:015921848",
+        "iconClass": "icon-landline",
+        "anchorText": "015921848"
+      },
+      {
+        "iconLink": "mailto:business@zylobrains.com",
+        "iconClass": "icon-email",
+        "anchorText": "business@zylobrains.com"
       }
     ]
 }

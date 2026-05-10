@@ -38,8 +38,8 @@ const Training = () => {
         imgWidth={300}
         imgHeight={300}
         imgAlt='Inner Banner Image'
-        bannerTitle='About'
-        bannerOrangeTitle='Us'
+        bannerTitle='Training & '
+        bannerOrangeTitle='Placement'
         description='<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sapiente ad rem quam velit odio ullam. Alias obcaecati nam fugit minima maxime voluptates vitae dolorem. Expedita illum asperiores praesentium?</p>'
       />
 

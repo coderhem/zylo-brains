@@ -113,3 +113,20 @@ body.active{
  @apply
  overflow-hidden;
 }
+
+.top-header{
+  @apply
+  h-full transition-all duration-300 overflow-hidden;
+}
+body.scroll .top-header{
+  @apply
+  h-0 p-0;
+}
+
+.top-header{
+  @apply overflow-hidden transition-all duration-500;
+}
+
+body.scroll .top-header{
+  @apply -translate-y-full opacity-0 max-h-0 py-0;
+}

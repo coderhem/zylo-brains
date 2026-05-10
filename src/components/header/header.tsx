@@ -9,10 +9,30 @@ type HeaderProps = {
   passHeaderHeight: (height: number) => void;
   link: string;
   linkText: string;
+  anchorText: string;
 };
 
 const Header = ({ passHeaderHeight }: any) => {
   const [hamburger, setHamburger] = useState(false);
+  // Add scroll class on body after 40px
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        document.body.classList.add("scroll");
+      } else {
+        document.body.classList.remove("scroll");
+      }
+    };
+
+    // RUN IMMEDIATELY ON PAGE LOAD
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Toggle body class
   useEffect(() => {
@@ -33,6 +53,7 @@ const Header = ({ passHeaderHeight }: any) => {
 
     updateHeight();
     window.addEventListener("resize", updateHeight);
+    window.addEventListener("scroll", updateHeight);
 
     return () => window.removeEventListener("resize", updateHeight);
   }, [passHeaderHeight]);
@@ -53,9 +74,9 @@ const Header = ({ passHeaderHeight }: any) => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   return (
     <header className='site-header bg-white shadow-2xl' ref={headerRef}>
-      <div className="bg-secondary py-2 text-white">
+      <div className="top-header bg-secondary py-2 text-white">
         <div className="container">
-          <div className="flex justify-between gap-3">
+          <div className="flex flex-wrap justify-center md:justify-between gap-4">
             <div className="flex gap-2 justify-between">
               {Data.footerLinks?.length > 0 && (
                 <ul className='flex gap-4 py-1'>
@@ -69,15 +90,16 @@ const Header = ({ passHeaderHeight }: any) => {
                 </ul>
               )}
             </div>
-            {/* <ul>
-              {Data.topHeaderLinks.map((item, index)=>(
-              <li key={index}>
-                <a href={item.iconLink} className='transition-all duration-300 bg-white/10 hover:bg-primary focus:bg-primary ring-1 ring-transparent focus:ring-white active:bg-primary size-11 flex justify-center items-center rounded-lg text-white text-xl'>
-                  <i className={`${item.iconClass}`}></i>
-                </a>
-              </li>
+            <ul className='flex items-center gap-4'>
+              {navbarLinks.topHeaderLinks.map((item, index) => (
+                <li key={index}>
+                  <a href={item.iconLink} className='transition-all duration-300 flex gap-2 items-center text-white group hover:text-primary'>
+                    <i className={`${item.iconClass} transition-all duration-300 bg-white/20 size-7 inline-flex justify-center items-center text-xs rounded group-hover:bg-white`}></i>
+                    <span className='max-md:hidden'>{item.anchorText}</span>
+                  </a>
+                </li>
               ))}
-            </ul> */}
+            </ul>
           </div>
         </div>
       </div>
@@ -164,16 +186,11 @@ const Header = ({ passHeaderHeight }: any) => {
                 ))}
               </ul>
             </div>
-            <div className='flex items-center gap-4 sm:gap-8 px-4'>
-              <button className="hambBurger cursor-pointer" onClick={() => setHamburger(!hamburger)}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <a href="tel:9865900739" className='btn btn-primary size-12 flex justify-center items-center'>
-                <i className="icon-phone"></i>
-              </a>
-            </div>
+            <button className="hambBurger cursor-pointer" onClick={() => setHamburger(!hamburger)}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </nav>
         </div>
       </div>

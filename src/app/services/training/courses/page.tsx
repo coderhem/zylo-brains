@@ -6,6 +6,7 @@ import Accordion from '@/components/accordions/accordion';
 import { tuple } from 'zod';
 import FancyboxWrapper from '@/hooks/fancyBox';
 import PopupForm from '@/components/forms/popupForm';
+import InnerBanner from '@/components/innerBanner/innerBanner';
 type Props = {
   currentPage: number
 }
@@ -21,6 +22,15 @@ const Courses = ({ currentPage }: Props) => {
   };
   return (
     <>
+      <InnerBanner
+        imgSrc='/images/banner-image.jpg'
+        imgWidth={300}
+        imgHeight={300}
+        imgAlt='Inner Banner Image'
+        bannerTitle='Courses'
+        // bannerOrangeTitle='Us'
+        description='<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sapiente ad rem quam velit odio ullam. Alias obcaecati nam fugit minima maxime voluptates vitae dolorem. Expedita illum asperiores praesentium?</p>'
+      />
       <section className='pt-10'>
         <div className="container">
           <BlockTitle
