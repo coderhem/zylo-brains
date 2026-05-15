@@ -1,19 +1,35 @@
-.custom-scroll::-webkit-scrollbar,
-.custom-scroll-blue::-webkit-scrollbar {
-  @apply
-  h-1.5;
-}
+@layer {
+  .custom-scroll::-webkit-scrollbar,
+  .custom-scroll-blue::-webkit-scrollbar {
+    @apply h-1.5;
+  }
 
-.custom-scroll::-webkit-scrollbar-thumb {
-  @apply
-  bg-primary/20 rounded-2xl;
-}
-.custom-scroll-blue::-webkit-scrollbar-thumb {
-  @apply
-  bg-secondary/20;
-}
+  .custom-scroll::-webkit-scrollbar-thumb {
+    @apply bg-primary/20 rounded-2xl;
+  }
+  .custom-scroll-blue::-webkit-scrollbar-thumb {
+    @apply bg-secondary/20;
+  }
 
-/* .fancybox__slide.fancybox__slide.fancybox__slide{
+  /* .fancybox__slide.fancybox__slide.fancybox__slide{
 @apply
 bg-black/10!
 } */
+
+  .check-list li {
+    @apply relative
+  pl-7
+  mb-3
+  before:absolute
+  before:left-0
+  before:top-0.5
+  before:content-['\e914']
+  before:text-primary
+  before:font-icomoon;
+  }
+
+  /* .position-card{
+    @apply
+    bg-[url()]
+  } */
+}

@@ -144,17 +144,19 @@ const Header = ({ passHeaderHeight }: any) => {
               <ul className='px-4 flex flex-col gap-y-7 justify-center items-center -mx-4 [&_li]:px-4'>
                 {navbarLinks.links.map((item) => (
                   <li key={item.label} className="w-full text-center">
-
                     {/* Parent row */}
                     <div className="flex justify-center items-center gap-2">
-                      <Link
-                        href={item.path}
-                        className="link"
-                        onClick={() => setHamburger(false)}
-                      >
-                        {item.label}
-                      </Link>
-
+                      {item.path === "services" ? (
+                        <span className="link">{item.label}</span>
+                      ) : (
+                        <Link
+                          href={item.path}
+                          className="link"
+                          onClick={() => setHamburger(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      )}
                       {item.dropdown && (
                         <button onClick={() => setOpenMenu(openMenu === item.label ? null : item.label)
                         } className="relative text-xs bg-primary hover:bg-secondary p-1 rounded group transition-all duration-300">

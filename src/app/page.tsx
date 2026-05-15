@@ -142,43 +142,9 @@ export default function Home() {
             )}
           </div>
           {/* Pagination Code */}
-          {totalPages > 1 && (
-            <div className="flex justify-center gap-2 mt-10">
-              {/* Prev */}
-              <button
-                disabled={currentPage === 1}
-                onClick={() => setCurrentPage((p) => p - 1)}
-                className="pagination-btn"
-              >
-                Prev
-              </button>
-
-              {/* Pages */}
-              {Array.from({ length: totalPages }, (_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setCurrentPage(i + 1)}
-                  className={`px-3 py-2 rounded ${currentPage === i + 1
-                    ? 'pagination-number'
-                    : 'cursor-pointer bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300'
-                    }`}
-                >
-                  {i + 1}
-                </button>
-              ))}
-
-              {/* Next */}
-              <button
-                disabled={currentPage === totalPages}
-                onClick={() => setCurrentPage((p) => p + 1)}
-                className="pagination-btn"
-              >
-                Next
-              </button>
-            </div>
-          )}
+        
           <div className="text-center pt-20">
-            <Link href="/services/training" className="btn btn-primary">Explore More</Link>
+            <Link href="/services/training" className="btn btn-primary w-3/12">Explore More</Link>
           </div>
         </div>
       </section>

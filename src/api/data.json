@@ -461,15 +461,15 @@
         },
         {
           "linkText": "About",
-          "link": "/"
+          "link": "/about-us"
         },
         {
           "linkText": "Training",
-          "link": "/"
+          "link": "/services/training"
         },
         {
-          "linkText": "Carrer",
-          "link": "/"
+          "linkText": "Careers",
+          "link": "/careers"
         },
         {
           "linkText": "Blog",
@@ -787,6 +787,208 @@
         },
         {
           "listContent": "List 2"
+        }
+      ]
+    }
+  ],
+  "contactPageData": [
+    {
+      "anchorLink": "tel:9851345885",
+      "achorText": "9851345885",
+      "iconClass": "icon-phone"
+    },
+    {
+      "anchorLink": "mailto:business@zylobrains.com",
+      "achorText": "business@zylobrains.com",
+      "iconClass": "icon-email"
+    },
+    {
+      "anchorLink": "tel:015921848",
+      "achorText": "015921848",
+      "iconClass": "icon-landline"
+    }
+  ],
+  "careerCardData": [
+    {
+      "imgSrc": "/images/carrer-img.png",
+      "imgWidth": 400,
+      "imgHeight": 300,
+      "imgAlt": "Vacancy Card Image",
+      "position": "Java Developer",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quisquam laudantium inventore veritatis adipisci suscipit, tempore libero sit! Quia, numquam! Provident asperiores dicta officia iusto voluptates, nobis doloribus nostrum fugiat!",
+      "btnLink": "#apply",
+      "btnText": "Apply Now",
+      "listContent": [
+        {
+          "titleText": "Type",
+          "descriptionText": "Full Time"
+        },
+        {
+          "titleText": "Location",
+          "descriptionText": "Remote / Kathmandu"
+        },
+        {
+          "titleText": "Vacancies",
+          "descriptionText": "4"
+        },
+        {
+          "titleText": "Experience",
+          "descriptionText": "2 Years"
+        },
+        {
+          "titleText": "Qualification",
+          "descriptionText": "+2"
+        },
+        {
+          "titleText": "Salary",
+          "descriptionText": "Negotiable"
+        },
+        {
+          "titleText": "Publish Date",
+          "descriptionText": "2026-05-15"
+        },
+        {
+          "titleText": "Apply Before",
+          "descriptionText": "2026-05-25"
+        }
+      ],
+      "responsibilities": [
+        {
+          "listText": "Develop responsive and modern user interfaces"
+        },
+        {
+          "listText": "Work with reusable React components"
+        },
+        {
+          "listText": "Collaborate with UI/UX designers"
+        },
+        {
+          "listText": "Optimize application performance"
+        },
+        {
+          "listText": "Maintain clean and scalable code"
+        }
+      ]
+    },
+    {
+      "imgSrc": "/images/carrer-img.png",
+      "imgWidth": 400,
+      "imgHeight": 300,
+      "imgAlt": "Vacancy Card Image",
+      "position": "C# Developer",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quisquam laudantium inventore veritatis adipisci suscipit, tempore libero sit! Quia, numquam! Provident asperiores dicta officia iusto voluptates, nobis doloribus nostrum fugiat!",
+      "btnLink": "#apply",
+      "btnText": "Apply Now",
+      "listContent": [
+        {
+          "titleText": "Type",
+          "descriptionText": "Full Time"
+        },
+        {
+          "titleText": "Location",
+          "descriptionText": "Remote / Kathmandu"
+        },
+        {
+          "titleText": "Vacancies",
+          "descriptionText": "4"
+        },
+        {
+          "titleText": "Experience",
+          "descriptionText": "2 Years"
+        },
+        {
+          "titleText": "Qualification",
+          "descriptionText": "+2"
+        },
+        {
+          "titleText": "Salary",
+          "descriptionText": "Negotiable"
+        },
+              {
+          "titleText": "Publish Date",
+          "descriptionText": "2026-05-15"
+        },
+        {
+          "titleText": "Apply Before",
+          "descriptionText": "2026-05-25"
+        }
+      ],
+      "responsibilities": [
+        {
+          "listText": "Develop responsive and modern user interfaces"
+        },
+        {
+          "listText": "Work with reusable React components"
+        },
+        {
+          "listText": "Collaborate with UI/UX designers"
+        },
+        {
+          "listText": "Optimize application performance"
+        },
+        {
+          "listText": "Maintain clean and scalable code"
+        }
+      ]
+    },
+    {
+      "imgSrc": "/images/carrer-img.png",
+      "imgWidth": 400,
+      "imgHeight": 300,
+      "imgAlt": "Vacancy Card Image",
+      "position": "React Developer",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quisquam laudantium inventore veritatis adipisci suscipit, tempore libero sit! Quia, numquam! Provident asperiores dicta officia iusto voluptates, nobis doloribus nostrum fugiat!",
+      "btnLink": "#apply",
+      "btnText": "Apply Now",
+      "listContent": [
+        {
+          "titleText": "Type",
+          "descriptionText": "Full Time"
+        },
+        {
+          "titleText": "Location",
+          "descriptionText": "Remote / Kathmandu"
+        },
+        {
+          "titleText": "Vacancies",
+          "descriptionText": "4"
+        },
+        {
+          "titleText": "Experience",
+          "descriptionText": "2 Years"
+        },
+        {
+          "titleText": "Qualification",
+          "descriptionText": "+2"
+        },
+        {
+          "titleText": "Salary",
+          "descriptionText": "Negotiable"
+        },
+              {
+          "titleText": "Publish Date",
+          "descriptionText": "2026-05-15"
+        },
+        {
+          "titleText": "Apply Before",
+          "descriptionText": "2026-05-25"
+        }
+      ],
+      "responsibilities": [
+        {
+          "listText": "Develop responsive and modern user interfaces"
+        },
+        {
+          "listText": "Work with reusable React components"
+        },
+        {
+          "listText": "Collaborate with UI/UX designers"
+        },
+        {
+          "listText": "Optimize application performance"
+        },
+        {
+          "listText": "Maintain clean and scalable code"
         }
       ]
     }

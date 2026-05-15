@@ -11,7 +11,7 @@
    "ctaOneText": "Join Us",
    "ctaOneLink": "#inquery",
    "ctaTwoText": "Get in Touch",
-   "ctaTwoLink": "/contact"
+   "ctaTwoLink": "/contact-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
@@ -24,7 +24,7 @@
    "ctaOneText": "Join Us",
    "ctaOneLink": "#inquery",
    "ctaTwoText": "Get in Touch",
-   "ctaTwoLink": "/contact"
+   "ctaTwoLink": "/contact-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
@@ -37,7 +37,7 @@
    "ctaOneText": "Join Us",
    "ctaOneLink": "#inquery",
    "ctaTwoText": "Get in Touch",
-   "ctaTwoLink": "/contact"
+   "ctaTwoLink": "/contact-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
@@ -50,7 +50,7 @@
    "ctaOneText": "Join Us",
    "ctaOneLink": "#inquery",
    "ctaTwoText": "Get in Touch",
-   "ctaTwoLink": "/contact"
+   "ctaTwoLink": "/contact-us"
   },
   {
    "imgSrc": "/images/banner-image.jpg",
@@ -63,7 +63,7 @@
    "ctaOneText": "Join Us",
    "ctaOneLink": "#inquery",
    "ctaTwoText": "Get in Touch",
-   "ctaTwoLink": "/contact"
+   "ctaTwoLink": "/contact-us"
   }
  ]
 }

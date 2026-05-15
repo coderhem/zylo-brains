@@ -36,3 +36,28 @@ textarea.form-control {
 .form-group {
   @apply mb-4 w-full px-2;
 }
+
+.contact-form .form-img-wrapper{
+  @apply
+  hidden;
+}
+
+.contact-form .form-wrapper{
+@apply
+w-full!
+}
+
+.career-form {
+  @apply
+  flex 
+  flex-wrap
+  items-center
+  -mx-1;
+}
+
+.career-form .form-group{
+  @apply
+  w-full
+  sm:w-1/2
+  px-1;
+}

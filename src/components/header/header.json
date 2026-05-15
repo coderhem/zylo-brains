@@ -6,11 +6,12 @@
       },
       {
         "label": "About Us",
-        "path": "/about-us"
+        "path": "/about-us",
+        "type": "span"
       },
       {
         "label": "Services",
-        "path": "/services",
+        "path": "/services/",
         "dropdown": [
           {
             "label": "Training and Placement",
@@ -28,7 +29,7 @@
       },
       {
         "label": "Contact Us",
-        "path": "/contact"
+        "path": "/contact-us"
       }
     ],
     "topHeaderLinks":[
